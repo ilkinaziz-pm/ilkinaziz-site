@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: ''
+media_folder: 'ilkinaziz-website'
 public_folder: /
 site_url: https://ilkinaziz.com
 locale: en
@@ -11,7 +11,7 @@ collections:
     files:
       - name: site
         label: Everything
-        file: content.json
+        file: ilkinaziz-website/content.json
         description: Edit any part of the site here. Click Save (top-right) to publish.
         fields:
           - label: Settings
