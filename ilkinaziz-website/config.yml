@@ -1,0 +1,1494 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: ''
+public_folder: /
+site_url: https://ilkinaziz.com
+locale: en
+collections:
+  - name: content
+    label: Site content
+    files:
+      - name: site
+        label: Everything
+        file: content.json
+        description: Edit any part of the site here. Click Save (top-right) to publish.
+        fields:
+          - label: Settings
+            name: settings
+            widget: object
+            fields:
+              - label: Name
+                name: name
+                widget: string
+              - label: Email
+                name: email
+                widget: string
+              - label: Phone
+                name: phone
+                widget: string
+                required: false
+              - label: LinkedIn URL
+                name: linkedin
+                widget: string
+                required: false
+              - label: Formspree form ID (contact form)
+                name: formspreeId
+                widget: string
+                required: false
+              - label: Mentees stat (e.g. 30+)
+                name: menteeCount
+                widget: string
+                required: false
+              - label: Hero badges
+                name: badges
+                widget: list
+                field:
+                  label: Badge
+                  name: badge
+                  widget: string
+              - label: Portrait photo
+                name: portrait
+                widget: image
+                required: false
+              - label: CV (PDF)
+                name: cv
+                widget: file
+                required: false
+          - label: Experience
+            name: experience
+            widget: list
+            label_singular: Role
+            summary: '{{fields.role.en}}'
+            fields:
+              - label: Years
+                name: years
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: Role
+                name: role
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: Organization
+                name: org
+                widget: string
+                required: false
+              - label: Description
+                name: desc
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+          - label: Projects
+            name: projects
+            widget: list
+            label_singular: Project
+            summary: '{{fields.title}}'
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Tag
+                name: tag
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: Description
+                name: desc
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+          - label: Skills
+            name: skills
+            widget: list
+            label_singular: Skill group
+            summary: '{{fields.group.en}}'
+            fields:
+              - label: Group name
+                name: group
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: Items
+                name: items
+                widget: list
+                label_singular: Item
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+          - label: Speaking
+            name: speaking
+            widget: list
+            label_singular: Event
+            summary: '{{fields.title}}'
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Link
+                name: link
+                widget: string
+                required: false
+              - label: Tag
+                name: tag
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: Description
+                name: desc
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+          - label: Text & labels
+            name: ui
+            widget: object
+            collapsed: true
+            fields:
+              - label: nav_about
+                name: nav_about
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: nav_experience
+                name: nav_experience
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: nav_projects
+                name: nav_projects
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: nav_skills
+                name: nav_skills
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: nav_training
+                name: nav_training
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: nav_contact
+                name: nav_contact
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: nav_cta
+                name: nav_cta
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: hero_eyebrow
+                name: hero_eyebrow
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: hero_title
+                name: hero_title
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: hero_lede
+                name: hero_lede
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: hero_cta1
+                name: hero_cta1
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: hero_cv
+                name: hero_cv
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: about_title
+                name: about_title
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: about_p1
+                name: about_p1
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: about_p2
+                name: about_p2
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: about_stat1
+                name: about_stat1
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: about_stat2
+                name: about_stat2
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: about_stat3
+                name: about_stat3
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: lang_az
+                name: lang_az
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: lang_native
+                name: lang_native
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: lang_ru
+                name: lang_ru
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: lang_native2
+                name: lang_native2
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: lang_en
+                name: lang_en
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: lang_fluent
+                name: lang_fluent
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: exp_title
+                name: exp_title
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: exp_sub
+                name: exp_sub
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: edu_education
+                name: edu_education
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: edu_mba
+                name: edu_mba
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: edu_bba
+                name: edu_bba
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: edu_certs
+                name: edu_certs
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: edu_award
+                name: edu_award
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: proj_title
+                name: proj_title
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: proj_sub
+                name: proj_sub
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: skills_title
+                name: skills_title
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: skills_sub
+                name: skills_sub
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: skills_g1
+                name: skills_g1
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: skills_g2
+                name: skills_g2
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: skills_g3
+                name: skills_g3
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: skills_g4
+                name: skills_g4
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: train_title
+                name: train_title
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: train_sub
+                name: train_sub
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: train_role
+                name: train_role
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: train_desc
+                name: train_desc
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: train_s1
+                name: train_s1
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: train_s2
+                name: train_s2
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: train_s3
+                name: train_s3
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: train_b1
+                name: train_b1
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: train_b2
+                name: train_b2
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: train_b3
+                name: train_b3
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: train_b4
+                name: train_b4
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: train_b5
+                name: train_b5
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: train_foot
+                name: train_foot
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: speak_title
+                name: speak_title
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: speak_sub
+                name: speak_sub
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: speak_watch
+                name: speak_watch
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: quotes_title
+                name: quotes_title
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: quotes_sub
+                name: quotes_sub
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: quotes_q1
+                name: quotes_q1
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: quotes_q2
+                name: quotes_q2
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: quotes_q3
+                name: quotes_q3
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: writing_title
+                name: writing_title
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: writing_sub
+                name: writing_sub
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: writing_lede
+                name: writing_lede
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: writing_cta
+                name: writing_cta
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: contact_title
+                name: contact_title
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: contact_sub
+                name: contact_sub
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: contact_name
+                name: contact_name
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: contact_name_ph
+                name: contact_name_ph
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: contact_email
+                name: contact_email
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: contact_message
+                name: contact_message
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: contact_message_ph
+                name: contact_message_ph
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: contact_send
+                name: contact_send
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false
+              - label: contact_emaillink
+                name: contact_emaillink
+                widget: object
+                collapsed: true
+                fields:
+                  - label: English
+                    name: en
+                    widget: text
+                    required: false
+                  - label: Azərbaycan
+                    name: az
+                    widget: text
+                    required: false
+                  - label: Русский
+                    name: ru
+                    widget: text
+                    required: false

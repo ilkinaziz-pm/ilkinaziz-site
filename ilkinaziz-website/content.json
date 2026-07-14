@@ -1,0 +1,792 @@
+{
+  "settings": {
+    "name": "Ilkin Aziz",
+    "email": "ilkinaziz02@gmail.com",
+    "phone": "+994 10 511 30 11",
+    "linkedin": "",
+    "formspreeId": "",
+    "portrait": "portrait.jpg",
+    "cv": "Ilkin-Aziz-CV.pdf",
+    "menteeCount": "30+",
+    "badges": [
+      "PMP®",
+      "PMI-ACP®",
+      "PSM™ I",
+      "ICP-PDM"
+    ]
+  },
+  "ui": {
+    "nav_about": {
+      "en": "About",
+      "az": "Haqqımda",
+      "ru": "Обо мне"
+    },
+    "nav_experience": {
+      "en": "Experience",
+      "az": "Təcrübə",
+      "ru": "Опыт"
+    },
+    "nav_projects": {
+      "en": "Projects",
+      "az": "Layihələr",
+      "ru": "Проекты"
+    },
+    "nav_skills": {
+      "en": "Skills",
+      "az": "Bacarıqlar",
+      "ru": "Навыки"
+    },
+    "nav_training": {
+      "en": "Training",
+      "az": "Təlim",
+      "ru": "Обучение"
+    },
+    "nav_contact": {
+      "en": "Contact",
+      "az": "Əlaqə",
+      "ru": "Контакты"
+    },
+    "nav_cta": {
+      "en": "Get in touch",
+      "az": "Əlaqə saxla",
+      "ru": "Связаться"
+    },
+    "hero_eyebrow": {
+      "en": "Project Manager · Baku, Azerbaijan",
+      "az": "Layihə Meneceri · Bakı, Azərbaycan",
+      "ru": "Проектный менеджер · Баку, Азербайджан"
+    },
+    "hero_title": {
+      "en": "Hi, I'm <span class=\"hl\">Ilkin Aziz</span>.<br />I turn complex projects<br />into calm, on-time delivery.",
+      "az": "Salam, mən <span class=\"hl\">İlkin Əziz</span>.<br />Mürəkkəb layihələri sakit,<br />vaxtında icraya çevirirəm.",
+      "ru": "Привет, я <span class=\"hl\">Илькин Азиз</span>.<br />Превращаю сложные проекты<br />в спокойную сдачу точно в срок."
+    },
+    "hero_lede": {
+      "en": "A PMP®, PMI-ACP® and PSM™ certified project manager with 5+ years delivering digital, banking, and automation projects end-to-end — from the first business case all the way to a clean, signed-off launch.",
+      "az": "PMP®, PMI-ACP® və PSM™ sertifikatlı layihə meneceriyəm; 5+ ildir rəqəmsal, bank və avtomatlaşdırma layihələrini ilk biznes-əsasdan təmiz, təsdiqlənmiş istifadəyə qədər tam idarə edirəm.",
+      "ru": "Проектный менеджер с сертификатами PMP®, PMI-ACP® и PSM™ и более чем 5-летним опытом сквозной реализации цифровых, банковских и автоматизационных проектов — от первого бизнес-обоснования до чистого, подписанного запуска."
+    },
+    "hero_cta1": {
+      "en": "See my work",
+      "az": "İşlərimə bax",
+      "ru": "Мои работы"
+    },
+    "hero_cv": {
+      "en": "Download CV",
+      "az": "CV-ni yüklə",
+      "ru": "Скачать резюме"
+    },
+    "about_title": {
+      "en": "About me",
+      "az": "Haqqımda",
+      "ru": "Обо мне"
+    },
+    "about_p1": {
+      "en": "I'm a project manager based in Baku who genuinely enjoys taking a messy, ambiguous problem and turning it into a clear plan that ships. Over the last five years I've led digital, telecom, and internal automation projects across banking and technology — the kind of work where IT, business, finance, risk, and legal all need to end up on the same page.",
+      "az": "Bakıda fəaliyyət göstərən layihə meneceriyəm və qarışıq, qeyri-müəyyən problemi götürüb icra olunan aydın plana çevirməkdən həqiqətən zövq alıram. Son beş ildə bank və texnologiya sahəsində rəqəmsal, telekom və daxili avtomatlaşdırma layihələrinə rəhbərlik etmişəm — IT, biznes, maliyyə, risk və hüquq şöbələrinin eyni məqsəd ətrafında birləşməli olduğu işlər.",
+      "ru": "Я проектный менеджер из Баку, и мне искренне нравится брать запутанную, неоднозначную задачу и превращать её в ясный план, который доходит до результата. За последние пять лет я вёл цифровые, телеком- и внутренние автоматизационные проекты в банковской и технологической сферах — там, где ИТ, бизнес, финансы, риски и юристы должны прийти к общему знаменателю."
+    },
+    "about_p2": {
+      "en": "I care about the right delivery approach for the job, whether that's waterfall, agile, scrum, or a hybrid of all three. Just as much, I care about the people: keeping teams aligned, unblocked, and (honestly) in a good mood while the hard work gets done. Alongside delivery, I train and mentor others in project management, and I'm currently completing an MBA in Project Management at UNEC.",
+      "az": "Hər iş üçün düzgün icra yanaşmasının seçilməsinə önəm verirəm — waterfall, agile, scrum, yaxud bunların hibridi. Eyni dərəcədə insanlara da diqqət yetirirəm: komandaları uzlaşdırıb maneələrdən azad edərək iş görülən müddətdə əhval-ruhiyyəni yüksək saxlamağa çalışıram. İcra ilə yanaşı, layihə idarəçiliyi üzrə təlim və mentorluq edirəm və hazırda UNEC-də Layihə İdarəetməsi üzrə MBA təhsilimi tamamlayıram.",
+      "ru": "Для меня важен правильный подход к реализации под конкретную задачу — waterfall, agile, scrum или их гибрид. Не меньше я забочусь о людях: держу команды согласованными, разблокированными и (честно) в хорошем настроении, пока делается сложная работа. Помимо реализации, я обучаю и наставляю других в проектном управлении и сейчас заканчиваю MBA по проектному менеджменту в UNEC."
+    },
+    "about_stat1": {
+      "en": "Years delivering",
+      "az": "İllik təcrübə",
+      "ru": "Лет в реализации"
+    },
+    "about_stat2": {
+      "en": "Professionals trained",
+      "az": "Təlim keçən mütəxəssis",
+      "ru": "Специалистов обучено"
+    },
+    "about_stat3": {
+      "en": "Faster reporting & time-to-market",
+      "az": "Daha sürətli hesabat və icra",
+      "ru": "Быстрее отчётность и вывод на рынок"
+    },
+    "lang_az": {
+      "en": "Azerbaijani",
+      "az": "Azərbaycan",
+      "ru": "Азербайджанский"
+    },
+    "lang_native": {
+      "en": "Native",
+      "az": "Ana dili",
+      "ru": "Родной"
+    },
+    "lang_ru": {
+      "en": "Russian",
+      "az": "Rus",
+      "ru": "Русский"
+    },
+    "lang_native2": {
+      "en": "Native",
+      "az": "Ana dili",
+      "ru": "Родной"
+    },
+    "lang_en": {
+      "en": "English",
+      "az": "İngilis",
+      "ru": "Английский"
+    },
+    "lang_fluent": {
+      "en": "Fluent",
+      "az": "Sərbəst",
+      "ru": "Свободный"
+    },
+    "exp_title": {
+      "en": "Experience",
+      "az": "Təcrübə",
+      "ru": "Опыт"
+    },
+    "exp_sub": {
+      "en": "Where I've delivered, most recent first.",
+      "az": "Ən son işlərdən başlayaraq.",
+      "ru": "Где я работал, начиная с последнего."
+    },
+    "edu_education": {
+      "en": "Education",
+      "az": "Təhsil",
+      "ru": "Образование"
+    },
+    "edu_mba": {
+      "en": "<strong>MBA, Project Management</strong> — UNEC, Baku (in progress)",
+      "az": "<strong>MBA, Layihə İdarəetməsi</strong> — UNEC, Bakı (davam edir)",
+      "ru": "<strong>MBA, Проектный менеджмент</strong> — UNEC, Баку (в процессе)"
+    },
+    "edu_bba": {
+      "en": "<strong>BBA</strong> — ADA University, Baku · Exchange at Kadir Has University, Istanbul",
+      "az": "<strong>Biznesin İdarə Edilməsi (BBA)</strong> — ADA Universiteti, Bakı · Mübadilə: Kadir Has Universiteti, İstanbul",
+      "ru": "<strong>Бакалавр делового администрирования</strong> — Университет ADA, Баку · Обмен: Университет Кадир Хас, Стамбул"
+    },
+    "edu_certs": {
+      "en": "Certifications",
+      "az": "Sertifikatlar",
+      "ru": "Сертификаты"
+    },
+    "edu_award": {
+      "en": "Semi-finalist — Yüksəliş 5 National Leadership Competition, 2025",
+      "az": "Yarımfinalçı — Yüksəliş 5 Milli Liderlik Müsabiqəsi, 2025",
+      "ru": "Полуфиналист — Национальный конкурс лидерства «Yüksəliş 5», 2025"
+    },
+    "proj_title": {
+      "en": "Selected projects",
+      "az": "Seçilmiş layihələr",
+      "ru": "Избранные проекты"
+    },
+    "proj_sub": {
+      "en": "A few things I've helped bring to life.",
+      "az": "Həyata keçirməyə töhfə verdiyim bəzi işlər.",
+      "ru": "Несколько вещей, которые я помог воплотить."
+    },
+    "skills_title": {
+      "en": "Skills",
+      "az": "Bacarıqlar",
+      "ru": "Навыки"
+    },
+    "skills_sub": {
+      "en": "What I bring to a delivery team.",
+      "az": "İcra komandasına gətirdiklərim.",
+      "ru": "Что я приношу команде реализации."
+    },
+    "skills_g1": {
+      "en": "Project management",
+      "az": "Layihə idarəetməsi",
+      "ru": "Проектное управление"
+    },
+    "skills_g2": {
+      "en": "Agile & delivery",
+      "az": "Agile və icra",
+      "ru": "Agile и реализация"
+    },
+    "skills_g3": {
+      "en": "Banking & stakeholders",
+      "az": "Bank və stakeholderlər",
+      "ru": "Банкинг и стейкхолдеры"
+    },
+    "skills_g4": {
+      "en": "Tools",
+      "az": "Alətlər",
+      "ru": "Инструменты"
+    },
+    "train_title": {
+      "en": "Training & mentorship",
+      "az": "Təlim və mentorluq",
+      "ru": "Обучение и наставничество"
+    },
+    "train_sub": {
+      "en": "Helping the next wave of project managers get certified and ready.",
+      "az": "Növbəti nəsil layihə menecerlərinin sertifikatlaşıb hazırlaşmasına kömək edirəm.",
+      "ru": "Помогаю новой волне проектных менеджеров сертифицироваться и подготовиться."
+    },
+    "train_role": {
+      "en": "Project Management Trainer & Mentor",
+      "az": "Layihə İdarəetməsi Təlimçisi və Mentoru",
+      "ru": "Тренер и наставник по проектному управлению"
+    },
+    "train_desc": {
+      "en": "I design and deliver hands-on trainings in PMP, Agile, Scrum, and Hybrid delivery — built around real, scenario-based exercises in stakeholder engagement, risk, governance, and end-to-end project delivery. Beyond the classroom, I mentor professionals one-on-one as they prepare for their certifications and step into real delivery roles.",
+      "az": "PMP, Agile, Scrum və Hibrid icra üzrə praktiki təlimlər hazırlayıb keçirirəm — stakeholder cəlbetmə, risk, idarəetmə və uçdan-uca layihə icrası üzrə real ssenari əsaslı tapşırıqlarla qurulub. Auditoriyadan kənarda mütəxəssislərə sertifikatlarına hazırlaşarkən və real icra rollarına keçərkən fərdi mentorluq edirəm.",
+      "ru": "Разрабатываю и провожу практические тренинги по PMP, Agile, Scrum и гибридной реализации — на основе реальных сценарных заданий по вовлечению стейкхолдеров, рискам, управлению и сквозной реализации проектов. Помимо аудитории, наставляю специалистов один на один при подготовке к сертификациям и переходе к реальным ролям."
+    },
+    "train_s1": {
+      "en": "Professionals trained",
+      "az": "Təlim keçən mütəxəssis",
+      "ru": "Специалистов обучено"
+    },
+    "train_s2": {
+      "en": "Programs: PMP, Agile, Scrum, Hybrid",
+      "az": "Proqram: PMP, Agile, Scrum, Hibrid",
+      "ru": "Программы: PMP, Agile, Scrum, гибрид"
+    },
+    "train_s3": {
+      "en": "Mentees guided toward PMP / PSM<sup>*</sup>",
+      "az": "PMP / PSM-ə yönləndirilən mentee<sup>*</sup>",
+      "ru": "Подопечных к PMP / PSM<sup>*</sup>"
+    },
+    "train_b1": {
+      "en": "Exam prep",
+      "az": "İmtahan hazırlığı",
+      "ru": "Подготовка к экзамену"
+    },
+    "train_b2": {
+      "en": "Agile practices",
+      "az": "Agile praktikaları",
+      "ru": "Agile-практики"
+    },
+    "train_b3": {
+      "en": "Scrum mastery",
+      "az": "Scrum ustalığı",
+      "ru": "Мастерство Scrum"
+    },
+    "train_b4": {
+      "en": "Delivery",
+      "az": "İcra",
+      "ru": "Реализация"
+    },
+    "train_b5": {
+      "en": "Mentorship",
+      "az": "Mentorluq",
+      "ru": "Наставничество"
+    },
+    "train_foot": {
+      "en": "<sup>*</sup> <em>Update this figure with your real count of certified mentees.</em>",
+      "az": "<sup>*</sup> <em>Bu rəqəmi sertifikatlaşan mentee-lərin real sayı ilə yeniləyin.</em>",
+      "ru": "<sup>*</sup> <em>Обновите эту цифру реальным числом сертифицированных подопечных.</em>"
+    },
+    "speak_title": {
+      "en": "Speaking & events",
+      "az": "Çıxışlar və tədbirlər",
+      "ru": "Выступления и мероприятия"
+    },
+    "speak_sub": {
+      "en": "On stage and in the community.",
+      "az": "Səhnədə və icmada.",
+      "ru": "На сцене и в сообществе."
+    },
+    "speak_watch": {
+      "en": "Watch / learn more →",
+      "az": "İzlə / ətraflı →",
+      "ru": "Смотреть / подробнее →"
+    },
+    "quotes_title": {
+      "en": "Kind words",
+      "az": "Xoş sözlər",
+      "ru": "Тёплые слова"
+    },
+    "quotes_sub": {
+      "en": "Placeholders for now — add real quotes when you have them.",
+      "az": "Hələlik nümunədir — real rəyləriniz olduqda əlavə edin.",
+      "ru": "Пока placeholder — добавьте реальные отзывы, когда появятся."
+    },
+    "quotes_q1": {
+      "en": "\"<em>Add a short quote from a manager, teammate, or client here — one or two sentences works best.</em>\"",
+      "az": "\"<em>Buraya menecer, komanda yoldaşı və ya müştəridən qısa rəy əlavə edin — bir-iki cümlə ən yaxşısıdır.</em>\"",
+      "ru": "\"<em>Добавьте короткий отзыв от руководителя, коллеги или клиента — одна-две фразы лучше всего.</em>\""
+    },
+    "quotes_q2": {
+      "en": "\"<em>A second quote goes here. Something specific about how you work or a result you delivered lands well.</em>\"",
+      "az": "\"<em>İkinci rəy buraya. İş üslubunuz və ya əldə etdiyiniz nəticə haqqında konkret bir şey yaxşı təsir buraxır.</em>\"",
+      "ru": "\"<em>Второй отзыв. Что-то конкретное о том, как вы работаете или какой результат дали, звучит хорошо.</em>\""
+    },
+    "quotes_q3": {
+      "en": "\"<em>And a third. Keep it warm and human — the same voice as the rest of the site.</em>\"",
+      "az": "\"<em>Üçüncü rəy. Saytın qalan hissəsi kimi səmimi və insani saxlayın.</em>\"",
+      "ru": "\"<em>И третий. Пусть будет тёплым и человечным — в том же тоне, что и весь сайт.</em>\""
+    },
+    "writing_title": {
+      "en": "Writing",
+      "az": "Yazılar",
+      "ru": "Статьи"
+    },
+    "writing_sub": {
+      "en": "Notes on delivery, agile, and leading teams — coming soon.",
+      "az": "İcra, agile və komanda idarəçiliyi haqqında qeydlər — tezliklə.",
+      "ru": "Заметки о реализации, agile и управлении командами — скоро."
+    },
+    "writing_lede": {
+      "en": "I'm planning to share what I've learned about project delivery, agile in real organizations, and keeping stakeholders happy. First posts are on the way.",
+      "az": "Layihə icrası, real təşkilatlarda agile və stakeholderləri razı saxlamaq barədə öyrəndiklərimi paylaşmağı planlaşdırıram. İlk yazılar yoldadır.",
+      "ru": "Планирую делиться тем, что узнал о реализации проектов, agile в реальных организациях и о том, как радовать стейкхолдеров. Первые публикации уже в пути."
+    },
+    "writing_cta": {
+      "en": "Get notified",
+      "az": "Xəbərdar ol",
+      "ru": "Сообщить мне"
+    },
+    "contact_title": {
+      "en": "Let's talk.",
+      "az": "Gəlin danışaq.",
+      "ru": "Давайте поговорим."
+    },
+    "contact_sub": {
+      "en": "Open to project management roles, collaboration, training, and good conversations. Drop me a line and I'll get back to you.",
+      "az": "Layihə idarəetməsi rolları, əməkdaşlıq, təlim və maraqlı söhbətlərə açığam. Yazın, mütləq cavab verəcəyəm.",
+      "ru": "Открыт к ролям в проектном управлении, сотрудничеству, обучению и хорошим беседам. Напишите — я обязательно отвечу."
+    },
+    "contact_name": {
+      "en": "Name",
+      "az": "Ad",
+      "ru": "Имя"
+    },
+    "contact_name_ph": {
+      "en": "Your name",
+      "az": "Adınız",
+      "ru": "Ваше имя"
+    },
+    "contact_email": {
+      "en": "Email",
+      "az": "E-poçt",
+      "ru": "Эл. почта"
+    },
+    "contact_message": {
+      "en": "Message",
+      "az": "Mesaj",
+      "ru": "Сообщение"
+    },
+    "contact_message_ph": {
+      "en": "What's on your mind?",
+      "az": "Nə düşünürsünüz?",
+      "ru": "Что у вас на уме?"
+    },
+    "contact_send": {
+      "en": "Send message",
+      "az": "Mesaj göndər",
+      "ru": "Отправить"
+    },
+    "contact_emaillink": {
+      "en": "Email",
+      "az": "E-poçt",
+      "ru": "Эл. почта"
+    }
+  },
+  "experience": [
+    {
+      "years": {
+        "en": "Dec 2024 — Now",
+        "az": "Dek 2024 — İndi",
+        "ru": "Дек 2024 — сейчас"
+      },
+      "role": {
+        "en": "Project Manager",
+        "az": "Layihə Meneceri",
+        "ru": "Проектный менеджер"
+      },
+      "org": "PASHA Bank OJSC",
+      "desc": {
+        "en": "Lead strategic digital, reporting, and internal automation initiatives tied to corporate priorities and measurable KPIs. Own scope, schedule, and budget; run risk management and UAT sign-off; and deliver executive dashboards and KPI reporting that cut reporting time by 40%.",
+        "az": "Korporativ prioritetlərə və ölçüləbilən KPI-lara bağlı strateji rəqəmsal, hesabat və daxili avtomatlaşdırma təşəbbüslərinə rəhbərlik edirəm. Əhatə, cədvəl və büdcəyə cavabdehəm; risk idarəetməsi və UAT təsdiqini aparıram; hesabat vaxtını 40% azaldan icra idarə panelləri və KPI hesabatları hazırlayıram.",
+        "ru": "Веду стратегические цифровые, отчётные и внутренние автоматизационные инициативы, привязанные к корпоративным приоритетам и измеримым KPI. Отвечаю за объём, сроки и бюджет; веду управление рисками и приёмку UAT; готовлю управленческие дашборды и KPI-отчётность, сократившую время отчётности на 40%."
+      }
+    },
+    {
+      "years": {
+        "en": "Aug 2023 — Dec 2024",
+        "az": "Avq 2023 — Dek 2024",
+        "ru": "Авг 2023 — Дек 2024"
+      },
+      "role": {
+        "en": "Scrum Master / Agile Coach",
+        "az": "Scrum Master / Agile Kouç",
+        "ru": "Scrum Master / Agile-коуч"
+      },
+      "org": "Kapital Bank OJSC",
+      "desc": {
+        "en": "Supported SME/Micro product initiatives and coached 5+ cross-functional squads in agile ways of working. Sharpened backlog quality and sprint planning to contribute to a ~40% reduction in time-to-market and a 30% lift in delivery efficiency.",
+        "az": "SME/Micro məhsul təşəbbüslərini dəstəklədim və 5-dən çox çarpaz-funksional komandaya agile iş üsullarını öyrətdim. Backlog keyfiyyətini və sprint planlaşdırmasını gücləndirərək bazara çıxış vaxtının ~40% azalmasına və icra səmərəliliyinin 30% artmasına töhfə verdim.",
+        "ru": "Поддерживал продуктовые инициативы сегмента SME/Micro и обучал 5+ кросс-функциональных команд agile-подходам. Улучшил качество бэклога и планирование спринтов, что дало ~40% сокращение времени вывода на рынок и рост эффективности реализации на 30%."
+      }
+    },
+    {
+      "years": {
+        "en": "Jul 2022 — Aug 2023",
+        "az": "İyl 2022 — Avq 2023",
+        "ru": "Июл 2022 — Авг 2023"
+      },
+      "role": {
+        "en": "Executive Assistant to Deputy Chairman",
+        "az": "Sədr müavininin İcraçı Köməkçisi",
+        "ru": "Помощник заместителя председателя"
+      },
+      "org": "AzerGold CJSC",
+      "desc": {
+        "en": "Coordinated board-level meetings, agendas, minutes, and action tracking, and supported executive reporting and governance documentation for strategic decisions.",
+        "az": "İdarə heyəti səviyyəsində görüşləri, gündəlikləri, protokolları və tapşırıqların izlənməsini koordinasiya etdim; strateji qərarlar üçün icra hesabatlarını və idarəetmə sənədləşməsini dəstəklədim.",
+        "ru": "Координировал встречи уровня совета, повестки, протоколы и отслеживание задач; поддерживал управленческую отчётность и документацию корпоративного управления для стратегических решений."
+      }
+    },
+    {
+      "years": {
+        "en": "2020 — 2022",
+        "az": "2020 — 2022",
+        "ru": "2020 — 2022"
+      },
+      "role": {
+        "en": "Project Manager / Product Owner",
+        "az": "Layihə Meneceri / Məhsul Sahibi",
+        "ru": "Проектный менеджер / Владелец продукта"
+      },
+      "org": "G-5 Group · AzerService Catering · Digital Services / Kibrit Tech",
+      "desc": {
+        "en": "Owned delivery of digital and telecom products — CRM platforms, IP telephony, e-commerce, and order-management systems. Gathered requirements, prioritized by customer value and feasibility, coordinated vendors and procurement, and built performance dashboards to track delivery and operational KPIs.",
+        "az": "Rəqəmsal və telekom məhsullarının icrasına cavabdeh oldum — CRM platformaları, IP-telefoniya, e-ticarət və sifariş idarəetmə sistemləri. Tələbləri topladım, müştəri dəyəri və reallıq üzrə prioritetləşdirdim, təchizatçı və satınalmanı koordinasiya etdim, icra və əməliyyat KPI-larını izləmək üçün göstərici panelləri qurdum.",
+        "ru": "Отвечал за реализацию цифровых и телеком-продуктов — CRM-платформы, IP-телефония, e-commerce и системы управления заказами. Собирал требования, расставлял приоритеты по ценности и реализуемости, координировал поставщиков и закупки, строил дашборды для контроля реализации и операционных KPI."
+      }
+    },
+    {
+      "years": {
+        "en": "2018 — 2020",
+        "az": "2018 — 2020",
+        "ru": "2018 — 2020"
+      },
+      "role": {
+        "en": "Call Center Team Leader → Manager",
+        "az": "Çağrı Mərkəzi Komanda Rəhbəri → Menecer",
+        "ru": "Тимлид колл-центра → Менеджер"
+      },
+      "org": "Digital Services / Avand Tech",
+      "desc": {
+        "en": "Supervised 15+ agents, improved average resolution score by 20%, and held 100% team retention — then moved into leading product and process improvements from customer and operational insight.",
+        "az": "15-dən çox operatora nəzarət etdim, orta həll göstəricisini 20% yaxşılaşdırdım və 100% komanda saxlanması təmin etdim — sonra müştəri və əməliyyat məlumatları əsasında məhsul və proses təkmilləşdirmələrinə rəhbərliyə keçdim.",
+        "ru": "Руководил 15+ операторами, повысил средний показатель решения на 20% и удержал команду на 100% — затем перешёл к руководству улучшениями продукта и процессов на основе клиентских и операционных данных."
+      }
+    }
+  ],
+  "projects": [
+    {
+      "title": "Telemart.az",
+      "tag": {
+        "en": "E-commerce",
+        "az": "E-ticarət",
+        "ru": "E-commerce"
+      },
+      "desc": {
+        "en": "Revived a frozen project and led the shift from B2B to B2C — launching a new online store for phones with secure payments and installment checkout.",
+        "az": "Dayanmış layihəni canlandırdım və B2B-dən B2C-yə keçidə rəhbərlik etdim — təhlükəsiz ödənişlər və hissə-hissə ödəmə ilə telefonlar üçün yeni onlayn mağaza istifadəyə verdim.",
+        "ru": "Оживил замороженный проект и провёл переход с B2B на B2C — запустил новый интернет-магазин телефонов с безопасными платежами и рассрочкой."
+      }
+    },
+    {
+      "title": "8Sual",
+      "tag": {
+        "en": "Mobile / Telecom",
+        "az": "Mobil / Telekom",
+        "ru": "Мобайл / Телеком"
+      },
+      "desc": {
+        "en": "Built a daily-quiz mobile service with a carrier short code and tiered question difficulty, growing daily subscribers and subscription revenue.",
+        "az": "Operator qısa nömrəsi və çətinlik səviyyələri olan gündəlik viktorina mobil xidmətini qurdum, gündəlik abunəçiləri və abunə gəlirini artırdım.",
+        "ru": "Создал мобильный сервис ежедневных викторин с коротким номером оператора и уровнями сложности, увеличив число ежедневных подписчиков и доход от подписки."
+      }
+    },
+    {
+      "title": "Coca-Cola Lottery",
+      "tag": {
+        "en": "Campaign platform",
+        "az": "Kampaniya platforması",
+        "ru": "Платформа кампаний"
+      },
+      "desc": {
+        "en": "Delivered a lottery system and customer-facing site for a multi-phase Coca-Cola promotion — fair, transparent, and compliant across every phase.",
+        "az": "Çoxmərhələli Coca-Cola aksiyası üçün lotereya sistemi və müştəri saytı hazırladım — hər mərhələdə ədalətli, şəffaf və uyğun.",
+        "ru": "Реализовал лотерейную систему и клиентский сайт для многоэтапной акции Coca-Cola — честно, прозрачно и в соответствии с требованиями на каждом этапе."
+      }
+    },
+    {
+      "title": "Sipuni IP-Telephony",
+      "tag": {
+        "en": "Telephony",
+        "az": "Telefoniya",
+        "ru": "Телефония"
+      },
+      "desc": {
+        "en": "Implemented an IP telephony and IVR system for Velure Fashion Center, integrating with existing lines and cutting customer response times.",
+        "az": "Velure Fashion Center üçün IP-telefoniya və IVR sistemi tətbiq etdim, mövcud xətlərlə inteqrasiya edərək müştəri cavab müddətini azaltdım.",
+        "ru": "Внедрил систему IP-телефонии и IVR для Velure Fashion Center, интегрировав с существующими линиями и сократив время ответа клиентам."
+      }
+    },
+    {
+      "title": "Food Order Management",
+      "tag": {
+        "en": "Operations",
+        "az": "Əməliyyatlar",
+        "ru": "Операции"
+      },
+      "desc": {
+        "en": "Created a platform connecting an outsourced call center with restaurant staff, improving order accuracy and speeding up processing.",
+        "az": "Xarici çağrı mərkəzini restoran işçiləri ilə birləşdirən platforma yaratdım, sifariş dəqiqliyini artırdım və emalı sürətləndirdim.",
+        "ru": "Создал платформу, связавшую внешний колл-центр с персоналом ресторана, повысив точность заказов и ускорив обработку."
+      }
+    },
+    {
+      "title": "Business Communication Platform",
+      "tag": {
+        "en": "Event",
+        "az": "Tədbir",
+        "ru": "Мероприятие"
+      },
+      "desc": {
+        "en": "Organized a high-profile business event at the Baku Convention Center — budget, agenda, speakers, and logistics end-to-end, to strong feedback.",
+        "az": "Bakı Konqres Mərkəzində yüksək səviyyəli biznes tədbiri təşkil etdim — büdcə, gündəlik, spikerlər və logistika tam şəkildə, güclü rəylərlə.",
+        "ru": "Организовал крупное бизнес-мероприятие в Бакинском конгресс-центре — бюджет, повестка, спикеры и логистика под ключ, с сильными отзывами."
+      }
+    },
+    {
+      "title": "Maldives Tour Package",
+      "tag": {
+        "en": "Travel / Marketing",
+        "az": "Səyahət / Marketinq",
+        "ru": "Тревел / Маркетинг"
+      },
+      "desc": {
+        "en": "Developed and marketed a travel package with CRM-linked campaigns and vendor partnerships, hitting sales targets in the launch phase.",
+        "az": "CRM-ə bağlı kampaniyalar və təchizatçı əməkdaşlıqları ilə səyahət paketi hazırladım və tanıtdım, ilk mərhələdə satış hədəflərinə çatdım.",
+        "ru": "Разработал и продвинул туристический пакет с кампаниями, связанными с CRM, и партнёрствами с поставщиками, достигнув целей продаж на этапе запуска."
+      }
+    },
+    {
+      "title": "Stakeholder Engagement",
+      "tag": {
+        "en": "Ways of working",
+        "az": "İş üsulları",
+        "ru": "Методы работы"
+      },
+      "desc": {
+        "en": "Introduced a stakeholder engagement manifesto and cadence within the scrum process, lifting satisfaction and reducing misalignment.",
+        "az": "Scrum prosesində stakeholder cəlbetmə manifesti və ritmi tətbiq etdim, məmnunluğu artırdım və uyğunsuzluğu azaltdım.",
+        "ru": "Внедрил манифест и ритм вовлечения стейкхолдеров в scrum-процесс, повысив удовлетворённость и снизив рассогласованность."
+      }
+    }
+  ],
+  "skills": [
+    {
+      "group": {
+        "en": "Project management",
+        "az": "Layihə idarəetməsi",
+        "ru": "Проектное управление"
+      },
+      "items": [
+        {
+          "en": "Full project lifecycle",
+          "az": "Tam layihə dövrü",
+          "ru": "Полный цикл проекта"
+        },
+        {
+          "en": "Scope & schedule",
+          "az": "Əhatə və cədvəl",
+          "ru": "Объём и сроки"
+        },
+        {
+          "en": "Budget control",
+          "az": "Büdcə nəzarəti",
+          "ru": "Контроль бюджета"
+        },
+        {
+          "en": "Risk management",
+          "az": "Risk idarəetməsi",
+          "ru": "Управление рисками"
+        },
+        {
+          "en": "Resource planning",
+          "az": "Resurs planlaması",
+          "ru": "Планирование ресурсов"
+        },
+        {
+          "en": "Stakeholder management",
+          "az": "Stakeholder idarəetməsi",
+          "ru": "Управление стейкхолдерами"
+        },
+        {
+          "en": "Procurement & tender",
+          "az": "Satınalma və tender",
+          "ru": "Закупки и тендеры"
+        },
+        {
+          "en": "Waterfall / Agile / Hybrid",
+          "az": "Waterfall / Agile / Hibrid",
+          "ru": "Waterfall / Agile / Гибрид"
+        }
+      ]
+    },
+    {
+      "group": {
+        "en": "Agile & delivery",
+        "az": "Agile və icra",
+        "ru": "Agile и реализация"
+      },
+      "items": [
+        {
+          "en": "Sprint planning",
+          "az": "Sprint planlaması",
+          "ru": "Планирование спринтов"
+        },
+        {
+          "en": "Backlog refinement",
+          "az": "Backlog təkmilləşdirmə",
+          "ru": "Груминг бэклога"
+        },
+        {
+          "en": "Reviews & retros",
+          "az": "Baxış və retro",
+          "ru": "Ревью и ретро"
+        },
+        {
+          "en": "MVP definition",
+          "az": "MVP təyini",
+          "ru": "Определение MVP"
+        },
+        {
+          "en": "UAT coordination",
+          "az": "UAT koordinasiyası",
+          "ru": "Координация UAT"
+        },
+        {
+          "en": "Definition of Done",
+          "az": "Definition of Done",
+          "ru": "Definition of Done"
+        },
+        {
+          "en": "Cross-functional teams",
+          "az": "Çarpaz-funksional komandalar",
+          "ru": "Кросс-функциональные команды"
+        }
+      ]
+    },
+    {
+      "group": {
+        "en": "Banking & stakeholders",
+        "az": "Bank və stakeholderlər",
+        "ru": "Банкинг и стейкхолдеры"
+      },
+      "items": [
+        {
+          "en": "Digital banking products",
+          "az": "Rəqəmsal bank məhsulları",
+          "ru": "Цифровые банковские продукты"
+        },
+        {
+          "en": "SME product development",
+          "az": "SME məhsul inkişafı",
+          "ru": "Разработка продуктов SME"
+        },
+        {
+          "en": "Product risk",
+          "az": "Məhsul riski",
+          "ru": "Продуктовые риски"
+        },
+        {
+          "en": "Compliance alignment",
+          "az": "Uyğunluq (compliance)",
+          "ru": "Соответствие (compliance)"
+        },
+        {
+          "en": "Executive & KPI reporting",
+          "az": "İcra və KPI hesabatı",
+          "ru": "Управленческая и KPI-отчётность"
+        },
+        {
+          "en": "Business–IT alignment",
+          "az": "Biznes–IT uzlaşması",
+          "ru": "Согласование бизнес–ИТ"
+        }
+      ]
+    },
+    {
+      "group": {
+        "en": "Tools",
+        "az": "Alətlər",
+        "ru": "Инструменты"
+      },
+      "items": [
+        {
+          "en": "MS Project",
+          "az": "MS Project",
+          "ru": "MS Project"
+        },
+        {
+          "en": "Excel",
+          "az": "Excel",
+          "ru": "Excel"
+        },
+        {
+          "en": "Visio",
+          "az": "Visio",
+          "ru": "Visio"
+        },
+        {
+          "en": "PowerPoint",
+          "az": "PowerPoint",
+          "ru": "PowerPoint"
+        },
+        {
+          "en": "Jira",
+          "az": "Jira",
+          "ru": "Jira"
+        },
+        {
+          "en": "Confluence",
+          "az": "Confluence",
+          "ru": "Confluence"
+        },
+        {
+          "en": "Power BI",
+          "az": "Power BI",
+          "ru": "Power BI"
+        },
+        {
+          "en": "Figma",
+          "az": "Figma",
+          "ru": "Figma"
+        },
+        {
+          "en": "Miro",
+          "az": "Miro",
+          "ru": "Miro"
+        },
+        {
+          "en": "Notion",
+          "az": "Notion",
+          "ru": "Notion"
+        }
+      ]
+    }
+  ],
+  "speaking": [
+    {
+      "title": "Take Off Baku — TEKNOFEST Azerbaijan",
+      "tag": {
+        "en": "Startup summit",
+        "az": "Startap sammiti",
+        "ru": "Стартап-саммит"
+      },
+      "desc": {
+        "en": "Took part in Take Off Baku, the startup summit held alongside TEKNOFEST Azerbaijan, connecting with founders and the regional tech ecosystem.",
+        "az": "TEKNOFEST Azərbaycanla yanaşı keçirilən Take Off Baku startap sammitində iştirak etdim, təsisçilər və regional texnologiya ekosistemi ilə əlaqələr qurdum.",
+        "ru": "Участвовал в Take Off Baku — стартап-саммите, проходившем вместе с TEKNOFEST Azerbaijan, где общался с основателями и региональной технологической экосистемой."
+      },
+      "link": ""
+    }
+  ]
+}

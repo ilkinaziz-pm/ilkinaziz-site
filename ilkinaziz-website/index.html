@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ilkin Aziz — Project Manager, PMP®</title>
+  <meta name="description" content="Ilkin Aziz — PMP, PMI-ACP and PSM certified Project Manager in Baku with 5+ years delivering digital, banking, and automation projects end-to-end." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ilkin Aziz — Project Manager, PMP®" />
+  <meta property="og:description" content="PMP, PMI-ACP and PSM certified Project Manager in Baku." />
+  <meta property="og:image" content="assets/portrait.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo">IA</a>
+    <nav class="nav__links">
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#experience" data-i18n="nav.experience">Experience</a>
+      <a href="#projects" data-i18n="nav.projects">Projects</a>
+      <a href="#skills" data-i18n="nav.skills">Skills</a>
+      <a href="#training" data-i18n="nav.training">Training</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="nav__right">
+      <div class="lang" id="lang" role="group" aria-label="Language">
+        <button data-lang="en" class="lang__btn">EN</button>
+        <button data-lang="az" class="lang__btn">AZ</button>
+        <button data-lang="ru" class="lang__btn">RU</button>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M19 5l-1.5 1.5M6.5 17.5L5 19"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a href="#contact" class="nav__cta" data-i18n="nav.cta">Get in touch</a>
+    </div>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span></button>
+  </header>
+
+  <main id="top">
+    <section class="hero reveal" id="hero">
+      <p class="hero__eyebrow" data-i18n="hero.eyebrow"></p>
+      <h1 class="hero__title" data-i18n-html="hero.title"></h1>
+      <p class="hero__lede" data-i18n="hero.lede"></p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary" data-i18n="hero.cta1">See my work</a>
+        <a id="cvLink" href="assets/Ilkin-Aziz-CV.pdf" download class="btn btn--ghost" data-i18n="hero.cv">Download CV</a>
+      </div>
+      <ul class="hero__badges" id="heroBadges"></ul>
+      <div class="hero__marquee" aria-hidden="true">
+        <div class="hero__track">
+          <span>Delivery</span><span>·</span><span>Agile &amp; Scrum</span><span>·</span>
+          <span>Digital Banking</span><span>·</span><span>Stakeholder Alignment</span><span>·</span>
+          <span>Risk Management</span><span>·</span><span>Roadmaps</span><span>·</span>
+          <span>Delivery</span><span>·</span><span>Agile &amp; Scrum</span><span>·</span>
+          <span>Digital Banking</span><span>·</span><span>Stakeholder Alignment</span><span>·</span>
+          <span>Risk Management</span><span>·</span><span>Roadmaps</span><span>·</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--about" id="about">
+      <div class="about">
+        <div class="about__photo reveal"><img id="portrait" src="assets/portrait.jpg" alt="Portrait of Ilkin Aziz" loading="lazy" /></div>
+        <div class="about__content reveal">
+          <h2 class="section__title" data-i18n="about.title"></h2>
+          <p class="about__text" data-i18n="about.p1"></p>
+          <p class="about__text" data-i18n="about.p2"></p>
+          <div class="about__stats">
+            <div class="stat"><span class="stat__num">5+</span><span class="stat__label" data-i18n="about.stat1"></span></div>
+            <div class="stat"><span class="stat__num">200+</span><span class="stat__label" data-i18n="about.stat2"></span></div>
+            <div class="stat"><span class="stat__num">40%</span><span class="stat__label" data-i18n="about.stat3"></span></div>
+          </div>
+          <div class="langs">
+            <span class="langs__item"><strong data-i18n="lang.az"></strong> — <span data-i18n="lang.native"></span></span>
+            <span class="langs__item"><strong data-i18n="lang.ru"></strong> — <span data-i18n="lang.native2"></span></span>
+            <span class="langs__item"><strong data-i18n="lang.en"></strong> — <span data-i18n="lang.fluent"></span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section__head reveal">
+        <h2 class="section__title" data-i18n="exp.title"></h2>
+        <p class="section__sub" data-i18n="exp.sub"></p>
+      </div>
+      <ol class="timeline" id="experienceList"></ol>
+      <div class="edu edu--two reveal">
+        <div class="edu__col">
+          <h3 class="edu__title" data-i18n="edu.education"></h3>
+          <p class="edu__line" data-i18n-html="edu.mba"></p>
+          <p class="edu__line" data-i18n-html="edu.bba"></p>
+        </div>
+        <div class="edu__col">
+          <h3 class="edu__title" data-i18n="edu.certs"></h3>
+          <p class="edu__line">PMP® · PMI-ACP® · PSM™ I · ICP-PDM</p>
+          <p class="edu__line" data-i18n="edu.award"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--projects" id="projects">
+      <div class="section__head reveal">
+        <h2 class="section__title" data-i18n="proj.title"></h2>
+        <p class="section__sub" data-i18n="proj.sub"></p>
+      </div>
+      <div class="grid" id="projectsGrid"></div>
+    </section>
+
+    <section class="section section--skills" id="skills">
+      <div class="section__head reveal">
+        <h2 class="section__title" data-i18n="skills.title"></h2>
+        <p class="section__sub" data-i18n="skills.sub"></p>
+      </div>
+      <div class="grid grid--skills" id="skillsGrid"></div>
+    </section>
+
+    <section class="section section--training" id="training">
+      <div class="section__head reveal">
+        <h2 class="section__title" data-i18n="train.title"></h2>
+        <p class="section__sub" data-i18n="train.sub"></p>
+      </div>
+      <div class="train reveal">
+        <div class="train__lead">
+          <p class="train__role" data-i18n="train.role"></p>
+          <p class="train__org">FELAB (LTC Lab) · PASHA Bank · 2024 — present</p>
+          <p class="train__desc" data-i18n="train.desc"></p>
+        </div>
+        <div class="train__stats">
+          <div class="tstat"><span class="tstat__num">200+</span><span class="tstat__label" data-i18n="train.s1"></span></div>
+          <div class="tstat"><span class="tstat__num">4</span><span class="tstat__label" data-i18n="train.s2"></span></div>
+          <div class="tstat"><span class="tstat__num" id="menteeNum">30+</span><span class="tstat__label" data-i18n="train.s3b">Mentees guided toward PMP / PSM</span></div>
+        </div>
+      </div>
+      <div class="train__badges reveal">
+        <span class="tbadge"><strong>PMP®</strong> <span data-i18n="train.b1"></span></span>
+        <span class="tbadge"><strong>PMI-ACP®</strong> <span data-i18n="train.b2"></span></span>
+        <span class="tbadge"><strong>PSM™</strong> <span data-i18n="train.b3"></span></span>
+        <span class="tbadge"><strong>Hybrid</strong> <span data-i18n="train.b4"></span></span>
+        <span class="tbadge"><strong>1:1</strong> <span data-i18n="train.b5"></span></span>
+      </div>
+    </section>
+
+    <section class="section section--speaking" id="speaking">
+      <div class="section__head reveal">
+        <h2 class="section__title" data-i18n="speak.title"></h2>
+        <p class="section__sub" data-i18n="speak.sub"></p>
+      </div>
+      <div class="grid grid--speaking" id="speakingGrid"></div>
+    </section>
+
+    <section class="section section--writing" id="writing">
+      <div class="section__head reveal">
+        <h2 class="section__title" data-i18n="writing.title"></h2>
+        <p class="section__sub" data-i18n="writing.sub"></p>
+      </div>
+      <div class="writing reveal">
+        <p class="writing__lede" data-i18n="writing.lede"></p>
+        <a href="#contact" class="btn btn--ghost" data-i18n="writing.cta">Get notified</a>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contact">
+      <div class="contact reveal">
+        <h2 class="contact__title" data-i18n="contact.title"></h2>
+        <p class="contact__sub" data-i18n="contact.sub"></p>
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="field"><label for="name" data-i18n="contact.name"></label><input type="text" id="name" name="name" data-i18n-ph="contact.name.ph" required /></div>
+          <div class="field"><label for="email" data-i18n="contact.email"></label><input type="email" id="email" name="email" placeholder="you@example.com" required /></div>
+          <div class="field field--full"><label for="message" data-i18n="contact.message"></label><textarea id="message" name="message" rows="4" data-i18n-ph="contact.message.ph" required></textarea></div>
+          <button type="submit" class="btn btn--primary" data-i18n="contact.send"></button>
+          <p class="contact__note" id="formNote" hidden></p>
+        </form>
+        <div class="contact__direct">
+          <a class="contact__email" id="emailLink" href="mailto:ilkinaziz02@gmail.com">ilkinaziz02@gmail.com</a>
+          <div class="contact__socials">
+            <a id="linkedinLink" href="#" target="_blank" rel="noopener">LinkedIn</a>
+            <a id="emailLink2" href="mailto:ilkinaziz02@gmail.com" data-i18n="contact.emaillink">Email</a>
+            <a id="phoneLink" href="tel:+994105113011">+994 10 511 30 11</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Ilkin Aziz</span>
+    <span>ilkinaziz.com</span>
+  </footer>
+
+  <script src="site.js"></script>
+  <!-- Netlify Identity: sends you to the admin after you accept your invite / log in -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function (user) {
+        if (!user) {
+          window.netlifyIdentity.on("login", function () { document.location.href = "/admin.html"; });
+        }
+      });
+    }
+  </script>
+</body>
+</html>
