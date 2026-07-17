@@ -305,3 +305,9 @@ img { max-width: 100%; display: block; }
 .logos__chip img { height: 30px; width: auto; display: block; opacity: .5; transition: opacity .25s ease; }
 .logos__chip:hover img { opacity: .95; }
 @media (prefers-reduced-motion: reduce) { .logos__track { flex-wrap: wrap; justify-content: center; } }
+/* ---------- Rich-silver transparent logo wall (append at end of styles.css) ---------- */
+.logos__track { align-items: center; gap: 3rem; }
+.logos__chip { display: inline-flex; align-items: center; justify-content: center; background: transparent; box-shadow: none; padding: 0; height: auto; flex: 0 0 auto; }
+.logos__chip img { height: 30px; width: auto; display: block; opacity: .8; transition: opacity .25s ease; }
+.logos__chip:hover img { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .logos__track { flex-wrap: wrap; justify-content: center; } }
