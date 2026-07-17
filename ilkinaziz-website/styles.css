@@ -328,3 +328,27 @@ img { max-width: 100%; display: block; }
 .logos__chip:hover img, .logos__chip:hover .logos__word { opacity: 1; }
 @media (max-width: 600px) { .logos__chip { width: 120px; height: 42px; } }
 @media (prefers-reduced-motion: reduce) { .logos__track { flex-wrap: wrap; justify-content: center; } }
+/* ---------- Project-plan game + Gantt (append at end of styles.css) ---------- */
+.game { max-width: var(--max); margin: 0 auto; padding: clamp(4rem, 10vw, 7rem) clamp(1.2rem, 5vw, 3rem); border-top: 1px solid var(--line); }
+.game__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+.game__slots { display: flex; flex-direction: column; gap: .6rem; }
+.game__pool { display: flex; flex-direction: column; gap: .6rem; background: var(--bg-2); border: 1px dashed var(--line); border-radius: 14px; padding: 1rem; align-content: flex-start; }
+.slot { display: flex; align-items: center; gap: .7rem; min-height: 54px; border: 1px dashed var(--line); border-radius: 12px; padding: .4rem .6rem; background: var(--surface); transition: border-color .2s; }
+.slot.over { border-color: var(--accent); }
+.slot.ok { border-style: solid; border-color: #33c481; }
+.slot.bad { border-style: solid; border-color: var(--accent); }
+.slot__num { width: 26px; height: 26px; flex: 0 0 auto; display: grid; place-items: center; border-radius: 50%; background: var(--bg-2); color: var(--muted); font-family: var(--font-display); font-size: .8rem; }
+.block { background: var(--accent); color: #fff; font-family: var(--font-display); font-weight: 500; font-size: .95rem; padding: .7rem 1rem; border-radius: 10px; cursor: grab; user-select: none; }
+.block.dragging { opacity: .5; }
+.block.sel { outline: 2px solid var(--text); outline-offset: 1px; }
+.game__actions { display: flex; gap: .8rem; margin-top: 1.2rem; flex-wrap: wrap; }
+.game__msg { margin-top: 1rem; font-family: var(--font-display); font-size: 1.05rem; }
+.game__msg.ok { color: #33c481; }
+.game__msg.bad { color: var(--accent); }
+.gantt { margin-top: 1.6rem; display: flex; flex-direction: column; gap: .5rem; }
+.gantt__row { display: grid; grid-template-columns: 180px 1fr; gap: 1rem; align-items: center; }
+.gantt__label { font-size: .9rem; color: var(--text-soft); }
+.gantt__track { position: relative; height: 22px; background: var(--bg-2); border-radius: 6px; }
+.gantt__bar { position: absolute; top: 0; bottom: 0; background: linear-gradient(90deg, var(--accent), var(--accent-2)); border-radius: 6px; transform-origin: left; animation: gbar .6s ease; }
+@keyframes gbar { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@media (max-width: 640px) { .game__grid { grid-template-columns: 1fr; } .gantt__row { grid-template-columns: 110px 1fr; } }
