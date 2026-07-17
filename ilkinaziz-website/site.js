@@ -146,3 +146,63 @@
     setLang(start); initForm(); reveal();
   }).catch(() => { document.body.innerHTML = "<p style='padding:2rem;font-family:sans-serif'>Could not load site content.</p>"; });
 })();
+/* ============================================================
+   Enhancements (append-only, safe): favicon, employer logo strip,
+   count-up stats. Paste this at the very END of site.js.
+   ============================================================ */
+(function () {
+  // --- Favicon: IA monogram, injected as an SVG data URI ---
+  try {
+    var svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="%230c0c10"/><text x="32" y="45" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700" fill="%23ff4d2e" text-anchor="middle">IA</text></svg>';
+    var fav = document.createElement("link");
+    fav.rel = "icon";
+    fav.type = "image/svg+xml";
+    fav.href = "data:image/svg+xml," + svg;
+    document.head.appendChild(fav);
+  } catch (e) {}
+
+  // --- Employer logo strip (text wordmarks) inserted above Experience ---
+  function buildLogos() {
+    if (document.getElementById("logoStrip")) return;
+    var exp = document.getElementById("experience");
+    if (!exp || !exp.parentNode) return;
+    var names = ["PASHA Bank", "Kapital Bank", "AzerGold", "Coca-Cola", "Digital Services", "G-5 Group"];
+    var sec = document.createElement("section");
+    sec.id = "logoStrip";
+    sec.className = "logos reveal in";
+    var html = '<p class="logos__label">Where I’ve delivered</p><div class="logos__track">';
+    names.concat(names).forEach(function (n) { html += '<span class="logos__item">' + n + "</span>"; });
+    html += "</div>";
+    sec.innerHTML = html;
+    exp.parentNode.insertBefore(sec, exp);
+  }
+
+  // --- Count-up animation for the stat numbers ---
+  function countUp(elm) {
+    var raw = elm.getAttribute("data-target") || elm.textContent.trim();
+    elm.setAttribute("data-target", raw);
+    var m = raw.match(/^(\D*)(\d+)(.*)$/);
+    if (!m) return;
+    var pre = m[1], target = parseInt(m[2], 10), suf = m[3], start = null, dur = 1200;
+    function step(ts) {
+      if (!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      elm.textContent = pre + Math.floor(p * target) + suf;
+      if (p < 1) requestAnimationFrame(step); else elm.textContent = raw;
+    }
+    requestAnimationFrame(step);
+  }
+  function initCounts() {
+    var nums = document.querySelectorAll(".stat__num, .tstat__num");
+    if (!nums.length || !("IntersectionObserver" in window)) return;
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (en) { if (en.isIntersecting) { countUp(en.target); io.unobserve(en.target); } });
+    }, { threshold: 0.5 });
+    nums.forEach(function (n) { io.observe(n); });
+  }
+
+  function run() { buildLogos(); initCounts(); }
+  if (document.readyState !== "loading") setTimeout(run, 600);
+  else window.addEventListener("DOMContentLoaded", function () { setTimeout(run, 600); });
+  window.addEventListener("load", function () { setTimeout(run, 300); });
+})();
