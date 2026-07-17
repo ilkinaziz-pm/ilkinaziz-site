@@ -311,3 +311,12 @@ img { max-width: 100%; display: block; }
 .logos__chip img { height: 30px; width: auto; display: block; opacity: .8; transition: opacity .25s ease; }
 .logos__chip:hover img { opacity: 1; }
 @media (prefers-reduced-motion: reduce) { .logos__track { flex-wrap: wrap; justify-content: center; } }
+/* ---------- Logo wall — equalized sizing (append at end of styles.css) ---------- */
+/* Each logo gets an identical box and scales to fit inside, so wide and
+   compact logos share the same footprint and spacing is even. */
+.logos__track { align-items: center; gap: 2rem; }
+.logos__chip { display: inline-flex; align-items: center; justify-content: center; width: 140px; height: 48px; padding: 0; background: transparent; box-shadow: none; flex: 0 0 auto; }
+.logos__chip img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; opacity: .8; transition: opacity .25s ease; }
+.logos__chip:hover img { opacity: 1; }
+@media (max-width: 600px) { .logos__chip { width: 110px; height: 40px; } }
+@media (prefers-reduced-motion: reduce) { .logos__track { flex-wrap: wrap; justify-content: center; } }
