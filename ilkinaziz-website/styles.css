@@ -294,3 +294,8 @@ img { max-width: 100%; display: block; }
   .nav, .hero__marquee, #scrollBar, .quiz, .contact__form, .logos, .theme-toggle { display: none !important; }
   body { color: #000; background: #fff; }
 }
+/* ---------- Real logo chips (append at end of styles.css) ---------- */
+.logos__track { align-items: center; gap: 1.5rem; }
+.logos__chip { display: inline-flex; align-items: center; justify-content: center; background: #fff; border-radius: 12px; padding: 12px 18px; height: 64px; flex: 0 0 auto; box-shadow: 0 1px 3px rgba(0,0,0,.14); }
+.logos__chip img { height: 38px; width: auto; display: block; }
+@media (prefers-reduced-motion: reduce) { .logos__track { flex-wrap: wrap; justify-content: center; } }
