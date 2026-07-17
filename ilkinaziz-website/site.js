@@ -382,3 +382,130 @@
   if(document.readyState!=="loading") setTimeout(build,900); else window.addEventListener("DOMContentLoaded",function(){setTimeout(build,900);});
   window.addEventListener("load",function(){setTimeout(build,500);});
 })();
+/* ============================================================
+   "Build the project plan" — drag-and-drop phase-ordering game
+   with validation + Gantt chart reveal. Append at END of site.js.
+   Works with drag-and-drop AND tap-to-place (mobile).
+   ============================================================ */
+(function () {
+  var PHASES = [
+    { id: "init",  label: "Initiation / Kick-off", start: 0, dur: 1 },
+    { id: "plan",  label: "Planning",              start: 1, dur: 2 },
+    { id: "exec",  label: "Execution",             start: 3, dur: 4 },
+    { id: "mon",   label: "Monitoring & Control",  start: 3, dur: 4 },
+    { id: "close", label: "Closing",               start: 7, dur: 1 }
+  ];
+  var ORDER = ["init", "plan", "exec", "mon", "close"];
+  var TOTAL = 8;
+  function labelObj(id) { for (var i = 0; i < PHASES.length; i++) if (PHASES[i].id === id) return PHASES[i]; return null; }
+
+  function build() {
+    if (document.getElementById("planGame")) return;
+    var anchor = document.getElementById("contact");
+    if (!anchor || !anchor.parentNode) return;
+
+    var sec = document.createElement("section");
+    sec.id = "planGame"; sec.className = "game reveal in";
+    sec.innerHTML =
+      '<div class="section__head"><h2 class="section__title">Build the project plan</h2>' +
+      '<p class="section__sub">Drag each phase into the right order (or tap a phase, then a slot). I’ll check it — then we draw the Gantt chart.</p></div>' +
+      '<div class="game__grid"><div class="game__slots" id="gameSlots"></div>' +
+      '<div class="game__pool" id="gamePool" aria-label="Phases to place"></div></div>' +
+      '<div class="game__actions"><button type="button" class="btn btn--primary" id="gameCheck">Check my plan</button>' +
+      '<button type="button" class="btn btn--ghost" id="gameReset">Reset</button></div>' +
+      '<p class="game__msg" id="gameMsg" hidden></p><div class="gantt" id="gantt" hidden></div>';
+    anchor.parentNode.insertBefore(sec, anchor);
+
+    var slots = sec.querySelector("#gameSlots"),
+        pool = sec.querySelector("#gamePool"),
+        sel = null;
+
+    function clearMarks() { Array.prototype.forEach.call(slots.querySelectorAll(".slot"), function (s) { s.classList.remove("ok", "bad"); }); }
+
+    function mkBlock(p) {
+      var b = document.createElement("div");
+      b.className = "block"; b.textContent = p.label; b.dataset.id = p.id; b.draggable = true;
+      b.addEventListener("dragstart", function (e) { e.dataTransfer.setData("text/plain", p.id); b.classList.add("dragging"); });
+      b.addEventListener("dragend", function () { b.classList.remove("dragging"); });
+      b.addEventListener("click", function (e) {
+        e.stopPropagation();
+        if (sel === b) { b.classList.remove("sel"); sel = null; }
+        else { if (sel) sel.classList.remove("sel"); sel = b; b.classList.add("sel"); }
+      });
+      return b;
+    }
+    function place(block, target) {
+      if (target.classList.contains("slot")) {
+        var ex = target.querySelector(".block");
+        if (ex && ex !== block) pool.appendChild(ex);
+        target.appendChild(block);
+      } else { pool.appendChild(block); }
+      if (sel) { sel.classList.remove("sel"); sel = null; }
+      clearMarks();
+    }
+    function dz(el) {
+      el.addEventListener("dragover", function (e) { e.preventDefault(); el.classList.add("over"); });
+      el.addEventListener("dragleave", function () { el.classList.remove("over"); });
+      el.addEventListener("drop", function (e) {
+        e.preventDefault(); el.classList.remove("over");
+        var id = e.dataTransfer.getData("text/plain");
+        var blk = sec.querySelector('.block[data-id="' + id + '"]');
+        if (blk) place(blk, el.classList.contains("slot") ? el : pool);
+      });
+      el.addEventListener("click", function () {
+        if (sel) place(sel, el.classList.contains("slot") ? el : pool);
+      });
+    }
+
+    for (var i = 0; i < ORDER.length; i++) {
+      var s = document.createElement("div");
+      s.className = "slot"; s.dataset.pos = i;
+      s.innerHTML = '<span class="slot__num">' + (i + 1) + "</span>";
+      slots.appendChild(s); dz(s);
+    }
+    dz(pool);
+    function fill() { PHASES.slice().sort(function () { return Math.random() - 0.5; }).forEach(function (p) { pool.appendChild(mkBlock(p)); }); }
+    fill();
+
+    sec.querySelector("#gameCheck").addEventListener("click", function () {
+      var msg = sec.querySelector("#gameMsg"), correct = 0, firstBad = -1;
+      Array.prototype.forEach.call(slots.querySelectorAll(".slot"), function (s, i) {
+        var blk = s.querySelector(".block"), id = blk ? blk.dataset.id : null;
+        s.classList.remove("ok", "bad");
+        if (id === ORDER[i]) { s.classList.add("ok"); correct++; }
+        else { s.classList.add("bad"); if (firstBad < 0) firstBad = i; }
+      });
+      msg.hidden = false;
+      if (correct === ORDER.length) {
+        msg.textContent = "Perfect — that’s exactly how a project flows. Here’s your Gantt chart:";
+        msg.className = "game__msg ok"; drawGantt();
+      } else {
+        var want = labelObj(ORDER[firstBad]).label;
+        msg.className = "game__msg bad";
+        msg.textContent = correct + "/" + ORDER.length + " in place. Slot " + (firstBad + 1) + " should be “" + want + "”. Keep going.";
+        sec.querySelector("#gantt").hidden = true;
+      }
+    });
+    sec.querySelector("#gameReset").addEventListener("click", function () {
+      pool.innerHTML = "";
+      Array.prototype.forEach.call(slots.querySelectorAll(".slot"), function (s) { var b = s.querySelector(".block"); if (b) b.remove(); });
+      clearMarks(); fill();
+      sec.querySelector("#gameMsg").hidden = true; sec.querySelector("#gantt").hidden = true;
+    });
+
+    function drawGantt() {
+      var g = sec.querySelector("#gantt"); g.hidden = false; g.innerHTML = "";
+      ORDER.forEach(function (id) {
+        var p = labelObj(id);
+        var row = document.createElement("div"); row.className = "gantt__row";
+        row.innerHTML = '<span class="gantt__label">' + p.label + '</span><div class="gantt__track"><span class="gantt__bar" style="left:' +
+          (p.start / TOTAL * 100) + "%;width:" + (p.dur / TOTAL * 100) + '%"></span></div>';
+        g.appendChild(row);
+      });
+    }
+  }
+
+  if (document.readyState !== "loading") setTimeout(build, 1000);
+  else window.addEventListener("DOMContentLoaded", function () { setTimeout(build, 1000); });
+  window.addEventListener("load", function () { setTimeout(build, 600); });
+})();
