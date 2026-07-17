@@ -206,3 +206,107 @@
   else window.addEventListener("DOMContentLoaded", function () { setTimeout(run, 600); });
   window.addEventListener("load", function () { setTimeout(run, 300); });
 })();
+/* ============================================================
+   Enhancements v2 (append-only, safe): scroll bar, PM quiz,
+   WhatsApp button, SEO schema, Konami easter egg.
+   Paste at the very END of site.js.
+   ============================================================ */
+(function () {
+  // --- Scroll progress bar ---
+  try {
+    var bar = document.createElement("div");
+    bar.id = "scrollBar";
+    document.body.appendChild(bar);
+    var upd = function () {
+      var h = document.documentElement;
+      var sc = h.scrollTop / (h.scrollHeight - h.clientHeight);
+      bar.style.transform = "scaleX(" + (sc || 0) + ")";
+    };
+    upd();
+    window.addEventListener("scroll", upd, { passive: true });
+  } catch (e) {}
+
+  // --- SEO: Person structured data ---
+  try {
+    var ld = {
+      "@context": "https://schema.org", "@type": "Person",
+      name: "Ilkin Aziz", jobTitle: "Project Manager",
+      address: { "@type": "PostalAddress", addressLocality: "Baku", addressCountry: "AZ" },
+      sameAs: ["https://www.linkedin.com/in/ilkin-aziz/", "https://www.instagram.com/ilkinazizpm/"],
+      knowsAbout: ["Project Management", "Agile", "Scrum", "PMP", "Risk Management", "Stakeholder Management"]
+    };
+    var sc = document.createElement("script");
+    sc.type = "application/ld+json";
+    sc.textContent = JSON.stringify(ld);
+    document.head.appendChild(sc);
+  } catch (e) {}
+
+  // --- WhatsApp quick button in contact ---
+  try {
+    var soc = document.querySelector(".contact__socials");
+    if (soc && !document.getElementById("waLink")) {
+      var wa = document.createElement("a");
+      wa.id = "waLink"; wa.href = "https://wa.me/994105113011";
+      wa.target = "_blank"; wa.rel = "noopener"; wa.textContent = "WhatsApp";
+      soc.appendChild(wa);
+    }
+  } catch (e) {}
+
+  // --- PM knowledge quiz (injected before Contact) ---
+  function buildQuiz() {
+    if (document.getElementById("pmQuiz")) return;
+    var anchor = document.getElementById("contact");
+    if (!anchor || !anchor.parentNode) return;
+    var Q = [
+      { q: "A stakeholder requests a scope change mid-sprint. Best first step?", a: ["Add it to the current sprint now", "Log it and take it to the product owner / backlog", "Reject it outright", "Ignore it until the retro"], c: 1 },
+      { q: "Which is a lagging indicator of project health?", a: ["Sprint burndown", "Actual cost at completion", "Daily stand-up mood", "Backlog size"], c: 1 },
+      { q: "“Definition of Done” primarily ensures…", a: ["Faster typing", "Shared, consistent quality criteria", "More meetings", "Larger scope"], c: 1 },
+      { q: "Requirements are unclear and evolving. Best approach?", a: ["Pure Waterfall", "Agile / iterative", "No plan", "Fixed-bid only"], c: 1 },
+      { q: "A risk is 90% likely with high impact. You should…", a: ["Accept it silently", "Mitigate and escalate with a plan", "Delete it from the register", "Wait and see"], c: 1 }
+    ];
+    var sec = document.createElement("section");
+    sec.id = "pmQuiz"; sec.className = "quiz reveal in";
+    var h = '<div class="quiz__inner"><h2 class="section__title">Test your PM knowledge</h2><p class="section__sub">Five quick questions — see how you score.</p><form id="pmQuizForm">';
+    Q.forEach(function (item, i) {
+      h += '<div class="quiz__q"><p class="quiz__qtext">' + (i + 1) + ". " + item.q + "</p>";
+      item.a.forEach(function (opt, j) { h += '<label class="quiz__opt"><input type="radio" name="q' + i + '" value="' + j + '"> ' + opt + "</label>"; });
+      h += "</div>";
+    });
+    h += '<button type="submit" class="btn btn--primary">See my score</button><p class="quiz__result" id="quizResult" hidden></p></div>';
+    sec.innerHTML = h;
+    anchor.parentNode.insertBefore(sec, anchor);
+    var form = document.getElementById("pmQuizForm"), res = document.getElementById("quizResult");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var score = 0;
+      Q.forEach(function (item, i) {
+        var sel = form.querySelector('input[name="q' + i + '"]:checked');
+        if (sel && parseInt(sel.value, 10) === item.c) score++;
+      });
+      var msg = score >= 4 ? "Sharp — you think like a delivery lead." : (score >= 2 ? "Solid instincts." : "Room to grow.");
+      res.hidden = false;
+      res.textContent = "You scored " + score + "/5. " + msg + " Want to go deeper? Let’s talk — scroll down.";
+    });
+  }
+
+  // --- Konami easter egg ---
+  try {
+    var seq = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65], pos = 0;
+    document.addEventListener("keydown", function (e) {
+      pos = (e.keyCode === seq[pos]) ? pos + 1 : 0;
+      if (pos === seq.length) {
+        pos = 0;
+        var t = document.createElement("div");
+        t.className = "toast";
+        t.textContent = "🎉 On time, on scope, on budget.";
+        document.body.appendChild(t);
+        setTimeout(function () { t.remove(); }, 3000);
+      }
+    });
+  } catch (e) {}
+
+  function run() { buildQuiz(); }
+  if (document.readyState !== "loading") setTimeout(run, 700);
+  else window.addEventListener("DOMContentLoaded", function () { setTimeout(run, 700); });
+  window.addEventListener("load", function () { setTimeout(run, 400); });
+})();
