@@ -1,325 +1,345 @@
 {
   "settings": {
     "name": "Ilkin Aziz",
-    "email": "ilkinaziz02@gmail.com",
-    "phone": "+994 10 511 30 11",
-    "linkedin": "https://www.linkedin.com/in/ilkin-aziz/",
     "formspreeId": "",
-    "portrait": "portrait.jpg",
-    "cv": "Ilkin-Aziz-CV.pdf",
-        "menteeCount": "30+",
+    "phone": "+994 10 511 30 11",
     "badges": [
       "PMP®",
       "PMI-ACP®",
       "PSM™ I",
       "ICP-PDM"
-    ]
+    ],
+    "menteeCount": "200+",
+    "cv": "Ilkin-Aziz-CV.pdf",
+    "portrait": "portrait.jpg",
+    "email": "ilkinaziz02@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/ilkin-aziz/"
   },
   "ui": {
-    "nav_about": {
-      "en": "About",
-      "az": "Haqqımda",
-      "ru": "Обо мне"
-    },
-    "nav_experience": {
-      "en": "Experience",
-      "az": "Təcrübə",
-      "ru": "Опыт"
-    },
-    "nav_projects": {
-      "en": "Projects",
-      "az": "Layihələr",
-      "ru": "Проекты"
-    },
-    "nav_skills": {
-      "en": "Skills",
-      "az": "Bacarıqlar",
-      "ru": "Навыки"
-    },
-    "nav_training": {
-      "en": "Training",
-      "az": "Təlim",
-      "ru": "Обучение"
-    },
-    "nav_contact": {
-      "en": "Contact",
-      "az": "Əlaqə",
-      "ru": "Контакты"
-    },
-    "nav_cta": {
-      "en": "Get in touch",
-      "az": "Əlaqə saxla",
-      "ru": "Связаться"
-    },
-    "hero_eyebrow": {
-      "en": "Project Manager · Baku, Azerbaijan",
-      "az": "Layihə Meneceri · Bakı, Azərbaycan",
-      "ru": "Проектный менеджер · Баку, Азербайджан"
-    },
-    "hero_title": {
-      "en": "Hi, I'm <span class=\"hl\">Ilkin Aziz</span>.<br />I turn complex projects<br />into calm, on-time delivery.",
-      "az": "Salam, mən <span class=\"hl\">İlkin Əziz</span>.<br />Mürəkkəb layihələri sakit,<br />vaxtında icraya çevirirəm.",
-      "ru": "Привет, я <span class=\"hl\">Илькин Азиз</span>.<br />Превращаю сложные проекты<br />в спокойную сдачу точно в срок."
-    },
-    "hero_lede": {
-      "en": "A PMP®, PMI-ACP® and PSM™ certified project manager with 5+ years delivering digital, banking, and automation projects end-to-end — from the first business case all the way to a clean, signed-off launch.",
-      "az": "PMP®, PMI-ACP® və PSM™ sertifikatlı layihə meneceriyəm; 5+ ildir rəqəmsal, bank və avtomatlaşdırma layihələrini ilk biznes-əsasdan təmiz, təsdiqlənmiş istifadəyə qədər tam idarə edirəm.",
-      "ru": "Проектный менеджер с сертификатами PMP®, PMI-ACP® и PSM™ и более чем 5-летним опытом сквозной реализации цифровых, банковских и автоматизационных проектов — от первого бизнес-обоснования до чистого, подписанного запуска."
-    },
-    "hero_cta1": {
-      "en": "See my work",
-      "az": "İşlərimə bax",
-      "ru": "Мои работы"
-    },
-    "hero_cv": {
-      "en": "Download CV",
-      "az": "CV-ni yüklə",
-      "ru": "Скачать резюме"
-    },
-    "about_title": {
-      "en": "About me",
-      "az": "Haqqımda",
-      "ru": "Обо мне"
-    },
-    "about_p1": {
-      "en": "I'm a project manager based in Baku who genuinely enjoys taking a messy, ambiguous problem and turning it into a clear plan that ships. Over the last five years I've led digital, telecom, and internal automation projects across banking and technology — the kind of work where IT, business, finance, risk, and legal all need to end up on the same page.",
-      "az": "Bakıda fəaliyyət göstərən layihə meneceriyəm və qarışıq, qeyri-müəyyən problemi götürüb icra olunan aydın plana çevirməkdən həqiqətən zövq alıram. Son beş ildə bank və texnologiya sahəsində rəqəmsal, telekom və daxili avtomatlaşdırma layihələrinə rəhbərlik etmişəm — IT, biznes, maliyyə, risk və hüquq şöbələrinin eyni məqsəd ətrafında birləşməli olduğu işlər.",
-      "ru": "Я проектный менеджер из Баку, и мне искренне нравится брать запутанную, неоднозначную задачу и превращать её в ясный план, который доходит до результата. За последние пять лет я вёл цифровые, телеком- и внутренние автоматизационные проекты в банковской и технологической сферах — там, где ИТ, бизнес, финансы, риски и юристы должны прийти к общему знаменателю."
-    },
-    "about_p2": {
-      "en": "I care about the right delivery approach for the job, whether that's waterfall, agile, scrum, or a hybrid of all three. Just as much, I care about the people: keeping teams aligned, unblocked, and (honestly) in a good mood while the hard work gets done. Alongside delivery, I train and mentor others in project management, and I'm currently completing an MBA in Project Management at UNEC.",
-      "az": "Hər iş üçün düzgün icra yanaşmasının seçilməsinə önəm verirəm — waterfall, agile, scrum, yaxud bunların hibridi. Eyni dərəcədə insanlara da diqqət yetirirəm: komandaları uzlaşdırıb maneələrdən azad edərək iş görülən müddətdə əhval-ruhiyyəni yüksək saxlamağa çalışıram. İcra ilə yanaşı, layihə idarəçiliyi üzrə təlim və mentorluq edirəm və hazırda UNEC-də Layihə İdarəetməsi üzrə MBA təhsilimi tamamlayıram.",
-      "ru": "Для меня важен правильный подход к реализации под конкретную задачу — waterfall, agile, scrum или их гибрид. Не меньше я забочусь о людях: держу команды согласованными, разблокированными и (честно) в хорошем настроении, пока делается сложная работа. Помимо реализации, я обучаю и наставляю других в проектном управлении и сейчас заканчиваю MBA по проектному менеджменту в UNEC."
-    },
-    "about_stat1": {
-      "en": "Years delivering",
-      "az": "İllik təcrübə",
-      "ru": "Лет в реализации"
-    },
-    "about_stat2": {
-      "en": "Professionals trained",
-      "az": "Təlim keçən mütəxəssis",
-      "ru": "Специалистов обучено"
-    },
-    "about_stat3": {
-      "en": "Faster reporting & time-to-market",
-      "az": "Daha sürətli hesabat və icra",
-      "ru": "Быстрее отчётность и вывод на рынок"
-    },
-    "lang_az": {
-      "en": "Azerbaijani",
-      "az": "Azərbaycan",
-      "ru": "Азербайджанский"
-    },
-    "lang_native": {
-      "en": "Native",
-      "az": "Ana dili",
-      "ru": "Родной"
-    },
-    "lang_ru": {
-      "en": "Russian",
-      "az": "Rus",
-      "ru": "Русский"
-    },
-    "lang_native2": {
-      "en": "Native",
-      "az": "Ana dili",
-      "ru": "Родной"
-    },
-    "lang_en": {
-      "en": "English",
-      "az": "İngilis",
-      "ru": "Английский"
-    },
-    "lang_fluent": {
-      "en": "Fluent",
-      "az": "Sərbəst",
-      "ru": "Свободный"
-    },
-    "exp_title": {
-      "en": "Experience",
-      "az": "Təcrübə",
-      "ru": "Опыт"
-    },
-    "exp_sub": {
-      "en": "Where I've delivered, most recent first.",
-      "az": "Ən son işlərdən başlayaraq.",
-      "ru": "Где я работал, начиная с последнего."
-    },
-    "edu_education": {
-      "en": "Education",
-      "az": "Təhsil",
-      "ru": "Образование"
-    },
-    "edu_mba": {
-      "en": "<strong>MBA, Project Management</strong> — UNEC, Baku (in progress)",
-      "az": "<strong>MBA, Layihə İdarəetməsi</strong> — UNEC, Bakı (davam edir)",
-      "ru": "<strong>MBA, Проектный менеджмент</strong> — UNEC, Баку (в процессе)"
-    },
-    "edu_bba": {
-      "en": "<strong>BBA</strong> — ADA University, Baku · Exchange at Kadir Has University, Istanbul",
-      "az": "<strong>Biznesin İdarə Edilməsi (BBA)</strong> — ADA Universiteti, Bakı · Mübadilə: Kadir Has Universiteti, İstanbul",
-      "ru": "<strong>Бакалавр делового администрирования</strong> — Университет ADA, Баку · Обмен: Университет Кадир Хас, Стамбул"
-    },
-    "edu_certs": {
-      "en": "Certifications",
-      "az": "Sertifikatlar",
-      "ru": "Сертификаты"
-    },
-    "edu_award": {
-      "en": "Semi-finalist — Yüksəliş 5 National Leadership Competition, 2025",
-      "az": "Yarımfinalçı — Yüksəliş 5 Milli Liderlik Müsabiqəsi, 2025",
-      "ru": "Полуфиналист — Национальный конкурс лидерства «Yüksəliş 5», 2025"
-    },
-    "proj_title": {
-      "en": "Selected projects",
-      "az": "Seçilmiş layihələr",
-      "ru": "Избранные проекты"
-    },
-    "proj_sub": {
-      "en": "A few things I've helped bring to life.",
-      "az": "Həyata keçirməyə töhfə verdiyim bəzi işlər.",
-      "ru": "Несколько вещей, которые я помог воплотить."
-    },
-    "skills_title": {
-      "en": "Skills",
-      "az": "Bacarıqlar",
-      "ru": "Навыки"
-    },
-    "skills_sub": {
-      "en": "What I bring to a delivery team.",
-      "az": "İcra komandasına gətirdiklərim.",
-      "ru": "Что я приношу команде реализации."
-    },
-    "skills_g1": {
-      "en": "Project management",
-      "az": "Layihə idarəetməsi",
-      "ru": "Проектное управление"
-    },
-    "skills_g2": {
-      "en": "Agile & delivery",
-      "az": "Agile və icra",
-      "ru": "Agile и реализация"
-    },
-    "skills_g3": {
-      "en": "Banking & stakeholders",
-      "az": "Bank və stakeholderlər",
-      "ru": "Банкинг и стейкхолдеры"
-    },
-    "skills_g4": {
-      "en": "Tools",
-      "az": "Alətlər",
-      "ru": "Инструменты"
-    },
     "train_title": {
       "en": "Training & mentorship",
       "az": "Təlim və mentorluq",
       "ru": "Обучение и наставничество"
     },
-    "train_sub": {
-      "en": "Helping the next wave of project managers get certified and ready.",
-      "az": "Növbəti nəsil layihə menecerlərinin sertifikatlaşıb hazırlaşmasına kömək edirəm.",
-      "ru": "Помогаю новой волне проектных менеджеров сертифицироваться и подготовиться."
-    },
-    "train_role": {
-      "en": "Project Management Trainer & Mentor",
-      "az": "Layihə İdarəetməsi Təlimçisi və Mentoru",
-      "ru": "Тренер и наставник по проектному управлению"
-    },
-    "train_desc": {
-      "en": "I design and deliver hands-on trainings in PMP, Agile, Scrum, and Hybrid delivery — built around real, scenario-based exercises in stakeholder engagement, risk, governance, and end-to-end project delivery. Beyond the classroom, I mentor professionals one-on-one as they prepare for their certifications and step into real delivery roles.",
-      "az": "PMP, Agile, Scrum və Hibrid icra üzrə praktiki təlimlər hazırlayıb keçirirəm — stakeholder cəlbetmə, risk, idarəetmə və uçdan-uca layihə icrası üzrə real ssenari əsaslı tapşırıqlarla qurulub. Auditoriyadan kənarda mütəxəssislərə sertifikatlarına hazırlaşarkən və real icra rollarına keçərkən fərdi mentorluq edirəm.",
-      "ru": "Разрабатываю и провожу практические тренинги по PMP, Agile, Scrum и гибридной реализации — на основе реальных сценарных заданий по вовлечению стейкхолдеров, рискам, управлению и сквозной реализации проектов. Помимо аудитории, наставляю специалистов один на один при подготовке к сертификациям и переходе к реальным ролям."
-    },
-    "train_s1": {
-      "en": "Professionals trained",
-      "az": "Təlim keçən mütəxəssis",
-      "ru": "Специалистов обучено"
-    },
-    "train_s2": {
-      "en": "Programs: PMP, Agile, Scrum, Hybrid",
-      "az": "Proqram: PMP, Agile, Scrum, Hibrid",
-      "ru": "Программы: PMP, Agile, Scrum, гибрид"
-    },
-    "train_s3": {
-      "en": "Mentees guided toward PMP / PSM<sup>*</sup>",
-      "az": "PMP / PSM-ə yönləndirilən mentee<sup>*</sup>",
-      "ru": "Подопечных к PMP / PSM<sup>*</sup>"
-    },
-    "train_b1": {
-      "en": "Exam prep",
-      "az": "İmtahan hazırlığı",
-      "ru": "Подготовка к экзамену"
-    },
-    "train_b2": {
-      "en": "Agile practices",
-      "az": "Agile praktikaları",
-      "ru": "Agile-практики"
-    },
-    "train_b3": {
-      "en": "Scrum mastery",
-      "az": "Scrum ustalığı",
-      "ru": "Мастерство Scrum"
-    },
-    "train_b4": {
-      "en": "Delivery",
-      "az": "İcra",
-      "ru": "Реализация"
-    },
-    "train_b5": {
-      "en": "Mentorship",
-      "az": "Mentorluq",
-      "ru": "Наставничество"
-    },
-    "train_foot": {
-      "en": "<sup>*</sup> <em>Update this figure with your real count of certified mentees.</em>",
-      "az": "<sup>*</sup> <em>Bu rəqəmi sertifikatlaşan mentee-lərin real sayı ilə yeniləyin.</em>",
-      "ru": "<sup>*</sup> <em>Обновите эту цифру реальным числом сертифицированных подопечных.</em>"
-    },
-    "speak_title": {
-      "en": "Speaking & events",
-      "az": "Çıxışlar və tədbirlər",
-      "ru": "Выступления и мероприятия"
-    },
-    "speak_sub": {
-      "en": "On stage and in the community.",
-      "az": "Səhnədə və icmada.",
-      "ru": "На сцене и в сообществе."
+    "contact_sub": {
+      "en": "Open to project management roles, collaboration, training, and good conversations. Drop me a line and I'll get back to you.",
+      "az": "Layihə idarəetməsi rolları, əməkdaşlıq, təlim və maraqlı söhbətlərə açığam. Yazın, mütləq cavab verəcəyəm.",
+      "ru": "Открыт к ролям в проектном управлении, сотрудничеству, обучению и хорошим беседам. Напишите — я обязательно отвечу."
     },
     "speak_watch": {
       "en": "Watch / learn more →",
       "az": "İzlə / ətraflı →",
       "ru": "Смотреть / подробнее →"
     },
-    "quotes_title": {
-      "en": "Kind words",
-      "az": "Xoş sözlər",
-      "ru": "Тёплые слова"
+    "skills_sub": {
+      "en": "What I bring to a delivery team.",
+      "az": "İcra komandasına gətirdiklərim.",
+      "ru": "Что я приношу команде реализации."
     },
-    "quotes_sub": {
-      "en": "Placeholders for now — add real quotes when you have them.",
-      "az": "Hələlik nümunədir — real rəyləriniz olduqda əlavə edin.",
-      "ru": "Пока placeholder — добавьте реальные отзывы, когда появятся."
+    "edu_mba": {
+      "en": "<strong>MBA, Project Management</strong> — UNEC, Baku (in progress)",
+      "az": "<strong>MBA, Layihə İdarəetməsi</strong> — UNEC, Bakı (davam edir)",
+      "ru": "<strong>MBA, Проектный менеджмент</strong> — UNEC, Баку (в процессе)"
+    },
+    "hero_eyebrow": {
+      "en": "Project Manager · Baku, Azerbaijan",
+      "az": "Layihə Meneceri · Bakı, Azərbaycan",
+      "ru": "Проектный менеджер · Баку, Азербайджан"
+    },
+    "nav_contact": {
+      "en": "Contact",
+      "az": "Əlaqə",
+      "ru": "Контакты"
+    },
+    "train_foot": {
+      "en": "<sup>*</sup> <em>Update this figure with your real count of certified mentees.</em>",
+      "az": "<sup>*</sup> <em>Bu rəqəmi sertifikatlaşan mentee-lərin real sayı ilə yeniləyin.</em>",
+      "ru": "<sup>*</sup> <em>Обновите эту цифру реальным числом сертифицированных подопечных.</em>"
+    },
+    "edu_certs": {
+      "en": "Certifications",
+      "az": "Sertifikatlar",
+      "ru": "Сертификаты"
+    },
+    "hero_cta1": {
+      "en": "See my work",
+      "az": "İşlərimə bax",
+      "ru": "Мои работы"
+    },
+    "train_b1": {
+      "en": "Exam prep",
+      "az": "İmtahan hazırlığı",
+      "ru": "Подготовка к экзамену"
+    },
+    "nav_experience": {
+      "en": "Experience",
+      "az": "Təcrübə",
+      "ru": "Опыт"
+    },
+    "about_title": {
+      "en": "About me",
+      "az": "Haqqımda",
+      "ru": "Обо мне"
+    },
+    "contact_send": {
+      "en": "Send message",
+      "az": "Mesaj göndər",
+      "ru": "Отправить"
+    },
+    "train_b2": {
+      "en": "Agile practices",
+      "az": "Agile praktikaları",
+      "ru": "Agile-практики"
+    },
+    "skills_g1": {
+      "en": "Project management",
+      "az": "Layihə idarəetməsi",
+      "ru": "Проектное управление"
     },
     "quotes_q1": {
       "en": "\"<em>Add a short quote from a manager, teammate, or client here — one or two sentences works best.</em>\"",
       "az": "\"<em>Buraya menecer, komanda yoldaşı və ya müştəridən qısa rəy əlavə edin — bir-iki cümlə ən yaxşısıdır.</em>\"",
       "ru": "\"<em>Добавьте короткий отзыв от руководителя, коллеги или клиента — одна-две фразы лучше всего.</em>\""
     },
+    "train_b3": {
+      "en": "Scrum mastery",
+      "az": "Scrum ustalığı",
+      "ru": "Мастерство Scrum"
+    },
+    "skills_g2": {
+      "en": "Agile & delivery",
+      "az": "Agile və icra",
+      "ru": "Agile и реализация"
+    },
+    "train_desc": {
+      "en": "I design and deliver hands-on trainings in PMP, Agile, Scrum, and Hybrid delivery — built around real, scenario-based exercises in stakeholder engagement, risk, governance, and end-to-end project delivery. Beyond the classroom, I mentor professionals one-on-one as they prepare for their certifications and step into real delivery roles.",
+      "az": "PMP, Agile, Scrum və Hibrid icra üzrə praktiki təlimlər hazırlayıb keçirirəm — stakeholder cəlbetmə, risk, idarəetmə və uçdan-uca layihə icrası üzrə real ssenari əsaslı tapşırıqlarla qurulub. Auditoriyadan kənarda mütəxəssislərə sertifikatlarına hazırlaşarkən və real icra rollarına keçərkən fərdi mentorluq edirəm.",
+      "ru": "Разрабатываю и провожу практические тренинги по PMP, Agile, Scrum и гибридной реализации — на основе реальных сценарных заданий по вовлечению стейкхолдеров, рискам, управлению и сквозной реализации проектов. Помимо аудитории, наставляю специалистов один на один при подготовке к сертификациям и переходе к реальным ролям."
+    },
+    "contact_message": {
+      "en": "Message",
+      "az": "Mesaj",
+      "ru": "Сообщение"
+    },
+    "lang_native": {
+      "en": "Native",
+      "az": "Ana dili",
+      "ru": "Родной"
+    },
     "quotes_q2": {
       "en": "\"<em>A second quote goes here. Something specific about how you work or a result you delivered lands well.</em>\"",
       "az": "\"<em>İkinci rəy buraya. İş üslubunuz və ya əldə etdiyiniz nəticə haqqında konkret bir şey yaxşı təsir buraxır.</em>\"",
       "ru": "\"<em>Второй отзыв. Что-то конкретное о том, как вы работаете или какой результат дали, звучит хорошо.</em>\""
+    },
+    "train_b4": {
+      "en": "Delivery",
+      "az": "İcra",
+      "ru": "Реализация"
+    },
+    "skills_g3": {
+      "en": "Banking & stakeholders",
+      "az": "Bank və stakeholderlər",
+      "ru": "Банкинг и стейкхолдеры"
+    },
+    "train_sub": {
+      "en": "Helping the next wave of project managers get certified and ready.",
+      "az": "Növbəti nəsil layihə menecerlərinin sertifikatlaşıb hazırlaşmasına kömək edirəm.",
+      "ru": "Помогаю новой волне проектных менеджеров сертифицироваться и подготовиться."
+    },
+    "lang_az": {
+      "en": "Azerbaijani",
+      "az": "Azərbaycan",
+      "ru": "Азербайджанский"
+    },
+    "lang_native2": {
+      "en": "Native",
+      "az": "Ana dili",
+      "ru": "Родной"
     },
     "quotes_q3": {
       "en": "\"<em>And a third. Keep it warm and human — the same voice as the rest of the site.</em>\"",
       "az": "\"<em>Üçüncü rəy. Saytın qalan hissəsi kimi səmimi və insani saxlayın.</em>\"",
       "ru": "\"<em>И третий. Пусть будет тёплым и человечным — в том же тоне, что и весь сайт.</em>\""
     },
+    "train_b5": {
+      "en": "Mentorship",
+      "az": "Mentorluq",
+      "ru": "Наставничество"
+    },
+    "skills_g4": {
+      "en": "Tools",
+      "az": "Alətlər",
+      "ru": "Инструменты"
+    },
+    "contact_name": {
+      "en": "Name",
+      "az": "Ad",
+      "ru": "Имя"
+    },
+    "about_stat1": {
+      "en": "Years delivering",
+      "az": "İllik təcrübə",
+      "ru": "Лет в реализации"
+    },
+    "speak_title": {
+      "en": "Speaking & events",
+      "az": "Çıxışlar və tədbirlər",
+      "ru": "Выступления и мероприятия"
+    },
+    "about_stat2": {
+      "en": "Professionals trained",
+      "az": "Təlim keçən mütəxəssis",
+      "ru": "Специалистов обучено"
+    },
+    "writing_cta": {
+      "en": "Get notified",
+      "az": "Xəbərdar ol",
+      "ru": "Сообщить мне"
+    },
+    "train_role": {
+      "en": "Project Management Trainer & Mentor",
+      "az": "Layihə İdarəetməsi Təlimçisi və Mentoru",
+      "ru": "Тренер и наставник по проектному управлению"
+    },
+    "about_stat3": {
+      "en": "Faster reporting & time-to-market",
+      "az": "Daha sürətli hesabat və icra",
+      "ru": "Быстрее отчётность и вывод на рынок"
+    },
+    "lang_fluent": {
+      "en": "Fluent",
+      "az": "Sərbəst",
+      "ru": "Свободный"
+    },
+    "contact_name_ph": {
+      "en": "Your name",
+      "az": "Adınız",
+      "ru": "Ваше имя"
+    },
+    "contact_message_ph": {
+      "en": "What's on your mind?",
+      "az": "Nə düşünürsünüz?",
+      "ru": "Что у вас на уме?"
+    },
+    "quotes_title": {
+      "en": "Kind words",
+      "az": "Xoş sözlər",
+      "ru": "Тёплые слова"
+    },
+    "nav_about": {
+      "en": "About",
+      "az": "Haqqımda",
+      "ru": "Обо мне"
+    },
+    "speak_sub": {
+      "en": "On stage and in the community.",
+      "az": "Səhnədə və icmada.",
+      "ru": "На сцене и в сообществе."
+    },
+    "hero_title": {
+      "en": "Hi, I'm <span class=\"hl\">Ilkin Aziz</span>.<br />I turn complex projects<br />into calm, on-time delivery.",
+      "az": "Salam, mən <span class=\"hl\">İlkin Əziz</span>.<br />Mürəkkəb layihələri sakit,<br />vaxtında icraya çevirirəm.",
+      "ru": "Привет, я <span class=\"hl\">Илькин Азиз</span>.<br />Превращаю сложные проекты<br />в спокойную сдачу точно в срок."
+    },
+    "about_p1": {
+      "en": "I'm a project manager based in Baku who genuinely enjoys taking a messy, ambiguous problem and turning it into a clear plan that ships. Over the last five years I've led digital, telecom, and internal automation projects across banking and technology — the kind of work where IT, business, finance, risk, and legal all need to end up on the same page.",
+      "az": "Bakıda fəaliyyət göstərən layihə meneceriyəm və qarışıq, qeyri-müəyyən problemi götürüb icra olunan aydın plana çevirməkdən həqiqətən zövq alıram. Son beş ildə bank və texnologiya sahəsində rəqəmsal, telekom və daxili avtomatlaşdırma layihələrinə rəhbərlik etmişəm — IT, biznes, maliyyə, risk və hüquq şöbələrinin eyni məqsəd ətrafında birləşməli olduğu işlər.",
+      "ru": "Я проектный менеджер из Баку, и мне искренне нравится брать запутанную, неоднозначную задачу и превращать её в ясный план, который доходит до результата. За последние пять лет я вёл цифровые, телеком- и внутренние автоматизационные проекты в банковской и технологической сферах — там, где ИТ, бизнес, финансы, риски и юристы должны прийти к общему знаменателю."
+    },
+    "edu_award": {
+      "en": "Semi-finalist — Yüksəliş 5 National Leadership Competition, 2025",
+      "az": "Yarımfinalçı — Yüksəliş 5 Milli Liderlik Müsabiqəsi, 2025",
+      "ru": "Полуфиналист — Национальный конкурс лидерства «Yüksəliş 5», 2025"
+    },
+    "nav_cta": {
+      "en": "Get in touch",
+      "az": "Əlaqə saxla",
+      "ru": "Связаться"
+    },
+    "lang_ru": {
+      "en": "Russian",
+      "az": "Rus",
+      "ru": "Русский"
+    },
+    "about_p2": {
+      "en": "I care about the right delivery approach for the job, whether that's waterfall, agile, scrum, or a hybrid of all three. Just as much, I care about the people: keeping teams aligned, unblocked, and (honestly) in a good mood while the hard work gets done. Alongside delivery, I train and mentor others in project management, and I'm currently completing an MBA in Project Management at UNEC.",
+      "az": "Hər iş üçün düzgün icra yanaşmasının seçilməsinə önəm verirəm — waterfall, agile, scrum, yaxud bunların hibridi. Eyni dərəcədə insanlara da diqqət yetirirəm: komandaları uzlaşdırıb maneələrdən azad edərək iş görülən müddətdə əhval-ruhiyyəni yüksək saxlamağa çalışıram. İcra ilə yanaşı, layihə idarəçiliyi üzrə təlim və mentorluq edirəm və hazırda UNEC-də Layihə İdarəetməsi üzrə MBA təhsilimi tamamlayıram.",
+      "ru": "Для меня важен правильный подход к реализации под конкретную задачу — waterfall, agile, scrum или их гибрид. Не меньше я забочусь о людях: держу команды согласованными, разблокированными и (честно) в хорошем настроении, пока делается сложная работа. Помимо реализации, я обучаю и наставляю других в проектном управлении и сейчас заканчиваю MBA по проектному менеджменту в UNEC."
+    },
     "writing_title": {
       "en": "Writing",
       "az": "Yazılar",
       "ru": "Статьи"
+    },
+    "train_s1": {
+      "en": "Professionals trained",
+      "az": "Təlim keçən mütəxəssis",
+      "ru": "Специалистов обучено"
+    },
+    "nav_projects": {
+      "en": "Projects",
+      "az": "Layihələr",
+      "ru": "Проекты"
+    },
+    "nav_training": {
+      "en": "Training",
+      "az": "Təlim",
+      "ru": "Обучение"
+    },
+    "exp_title": {
+      "en": "Experience",
+      "az": "Təcrübə",
+      "ru": "Опыт"
+    },
+    "proj_title": {
+      "en": "Selected projects",
+      "az": "Seçilmiş layihələr",
+      "ru": "Избранные проекты"
+    },
+    "train_s2": {
+      "en": "Programs: PMP, Agile, Scrum, Hybrid",
+      "az": "Proqram: PMP, Agile, Scrum, Hibrid",
+      "ru": "Программы: PMP, Agile, Scrum, гибрид"
+    },
+    "contact_emaillink": {
+      "en": "Email",
+      "az": "E-poçt",
+      "ru": "Эл. почта"
+    },
+    "train_s3": {
+      "en": "Mentees guided toward PMP / PSM<sup>*</sup>",
+      "az": "PMP / PSM-ə yönləndirilən mentee<sup>*</sup>",
+      "ru": "Подопечных к PMP / PSM<sup>*</sup>"
+    },
+    "edu_bba": {
+      "en": "<strong>BBA</strong> — ADA University, Baku · Exchange at Kadir Has University, Istanbul",
+      "az": "<strong>Biznesin İdarə Edilməsi (BBA)</strong> — ADA Universiteti, Bakı · Mübadilə: Kadir Has Universiteti, İstanbul",
+      "ru": "<strong>Бакалавр делового администрирования</strong> — Университет ADA, Баку · Обмен: Университет Кадир Хас, Стамбул"
+    },
+    "hero_cv": {
+      "en": "Download CV",
+      "az": "CV-ni yüklə",
+      "ru": "Скачать резюме"
+    },
+    "quotes_sub": {
+      "en": "Placeholders for now — add real quotes when you have them.",
+      "az": "Hələlik nümunədir — real rəyləriniz olduqda əlavə edin.",
+      "ru": "Пока placeholder — добавьте реальные отзывы, когда появятся."
+    },
+    "contact_title": {
+      "en": "Let's talk.",
+      "az": "Gəlin danışaq.",
+      "ru": "Давайте поговорим."
+    },
+    "lang_en": {
+      "en": "English",
+      "az": "İngilis",
+      "ru": "Английский"
+    },
+    "skills_title": {
+      "en": "Skills",
+      "az": "Bacarıqlar",
+      "ru": "Навыки"
     },
     "writing_sub": {
       "en": "Notes on delivery, agile, and leading teams — coming soon.",
@@ -331,55 +351,35 @@
       "az": "Layihə icrası, real təşkilatlarda agile və stakeholderləri razı saxlamaq barədə öyrəndiklərimi paylaşmağı planlaşdırıram. İlk yazılar yoldadır.",
       "ru": "Планирую делиться тем, что узнал о реализации проектов, agile в реальных организациях и о том, как радовать стейкхолдеров. Первые публикации уже в пути."
     },
-    "writing_cta": {
-      "en": "Get notified",
-      "az": "Xəbərdar ol",
-      "ru": "Сообщить мне"
-    },
-    "contact_title": {
-      "en": "Let's talk.",
-      "az": "Gəlin danışaq.",
-      "ru": "Давайте поговорим."
-    },
-    "contact_sub": {
-      "en": "Open to project management roles, collaboration, training, and good conversations. Drop me a line and I'll get back to you.",
-      "az": "Layihə idarəetməsi rolları, əməkdaşlıq, təlim və maraqlı söhbətlərə açığam. Yazın, mütləq cavab verəcəyəm.",
-      "ru": "Открыт к ролям в проектном управлении, сотрудничеству, обучению и хорошим беседам. Напишите — я обязательно отвечу."
-    },
-    "contact_name": {
-      "en": "Name",
-      "az": "Ad",
-      "ru": "Имя"
-    },
-    "contact_name_ph": {
-      "en": "Your name",
-      "az": "Adınız",
-      "ru": "Ваше имя"
-    },
     "contact_email": {
       "en": "Email",
       "az": "E-poçt",
       "ru": "Эл. почта"
     },
-    "contact_message": {
-      "en": "Message",
-      "az": "Mesaj",
-      "ru": "Сообщение"
+    "exp_sub": {
+      "en": "Where I've delivered, most recent first.",
+      "az": "Ən son işlərdən başlayaraq.",
+      "ru": "Где я работал, начиная с последнего."
     },
-    "contact_message_ph": {
-      "en": "What's on your mind?",
-      "az": "Nə düşünürsünüz?",
-      "ru": "Что у вас на уме?"
+    "proj_sub": {
+      "en": "A few things I've helped bring to life.",
+      "az": "Həyata keçirməyə töhfə verdiyim bəzi işlər.",
+      "ru": "Несколько вещей, которые я помог воплотить."
     },
-    "contact_send": {
-      "en": "Send message",
-      "az": "Mesaj göndər",
-      "ru": "Отправить"
+    "nav_skills": {
+      "en": "Skills",
+      "az": "Bacarıqlar",
+      "ru": "Навыки"
     },
-    "contact_emaillink": {
-      "en": "Email",
-      "az": "E-poçt",
-      "ru": "Эл. почта"
+    "hero_lede": {
+      "en": "A PMP®, PMI-ACP® and PSM™ certified project manager with 5+ years delivering digital, banking, and automation projects end-to-end — from the first business case all the way to a clean, signed-off launch.",
+      "az": "PMP®, PMI-ACP® və PSM™ sertifikatlı layihə meneceriyəm; 5+ ildir rəqəmsal, bank və avtomatlaşdırma layihələrini ilk biznes-əsasdan təmiz, təsdiqlənmiş istifadəyə qədər tam idarə edirəm.",
+      "ru": "Проектный менеджер с сертификатами PMP®, PMI-ACP® и PSM™ и более чем 5-летним опытом сквозной реализации цифровых, банковских и автоматизационных проектов — от первого бизнес-обоснования до чистого, подписанного запуска."
+    },
+    "edu_education": {
+      "en": "Education",
+      "az": "Təhsil",
+      "ru": "Образование"
     }
   },
   "experience": [
@@ -786,7 +786,7 @@
         "az": "TEKNOFEST Azərbaycanla yanaşı keçirilən Take Off Baku startap sammitində iştirak etdim, təsisçilər və regional texnologiya ekosistemi ilə əlaqələr qurdum.",
         "ru": "Участвовал в Take Off Baku — стартап-саммите, проходившем вместе с TEKNOFEST Azerbaijan, где общался с основателями и региональной технологической экосистемой."
       },
-      "link": ""
+      "link": "https://www.youtube.com/live/AK6Vrk24Yt4?si=yLCTKi1jt8zsZ0X9&t=8580"
     }
   ]
 }
